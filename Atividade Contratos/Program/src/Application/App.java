@@ -1,6 +1,7 @@
 package Application;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -41,7 +42,7 @@ public class App {
 			double valuePerHour = sc.nextDouble();
 			IO.print("Duracao (horas): ");
 			int hours = sc.nextInt();
-			HourContract contract = new HourContract(contractDate, valuePerHour, hours);
+			HourContract contract = new HourContract(contractDate, valuePerHour, hours); // problems here, research why
 			worker.addContract(contract);
 		}
 		
