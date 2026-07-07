@@ -39,7 +39,7 @@ public class App {
 		for (int i=1; i<=n; i++) {
 			IO.println("Entre com os dados do contrato #" + i + ":");
 			IO.print("Data (DD/MM/YYYY): ");
-			Date contractDate = sdf.parse(sc.next());
+			Date contractDate = sdf.parse(sc.next()); // TINHA QUE SER SIMPLEDATEFORMAT, NAO PODE SER LOCADATE.
 			IO.print("Valor por hora: ");
 			double valuePerHour = sc.nextDouble();
 			IO.print("Duracao (horas): ");

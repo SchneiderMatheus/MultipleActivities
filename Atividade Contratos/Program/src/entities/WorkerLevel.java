@@ -1,7 +1,11 @@
 package entities;
 
 public enum WorkerLevel {
+    INTERN,
     JUNIOR,
-    MID_LEVEL,
-    SENHIOR;
+    PLENO,
+    PLENO1,
+    PLENO2,
+    PLENO3,
+    SENIOR;
 }
