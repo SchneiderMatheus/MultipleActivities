@@ -1,6 +1,6 @@
 package Application;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
@@ -14,7 +14,9 @@ public class App {
     public static void main(String[] args) throws Exception {
         Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
 		
 		IO.print("Entre o nome do departamento: ");
 		String departmentName = sc.nextLine();
@@ -37,7 +39,7 @@ public class App {
 		for (int i=1; i<=n; i++) {
 			IO.println("Entre com os dados do contrato #" + i + ":");
 			IO.print("Data (DD/MM/YYYY): ");
-			LocalDate contractDate = LocalDate.parse(sc.next(), fmt);
+			Date contractDate = sdf.parse(sc.next());
 			IO.print("Valor por hora: ");
 			double valuePerHour = sc.nextDouble();
 			IO.print("Duracao (horas): ");
