@@ -8,7 +8,7 @@ public class Order {
     private Date moment;
     private OrderStatus status;
 
-    private List<Product> product = new ArrayList<>();
+    private List<OrderItem> orderItem = new ArrayList<>();
 
     public Date getMoment() {
         return moment;
