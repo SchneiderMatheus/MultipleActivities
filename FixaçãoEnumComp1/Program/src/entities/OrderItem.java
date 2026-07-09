@@ -8,6 +8,7 @@ public class OrderItem {
     private Double price;
 
     private List<Product> product = new ArrayList<>();
+    
     public Integer getQuantity() {
         return quantity;
     }
@@ -21,4 +22,7 @@ public class OrderItem {
         this.price = price;
     }
     
+    public Double subTotal(){
+        return quantity*price;
+    }
 }

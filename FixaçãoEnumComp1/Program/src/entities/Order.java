@@ -9,6 +9,7 @@ public class Order {
     private OrderStatus status;
 
     private List<OrderItem> orderItem = new ArrayList<>();
+    private List<Client> clients = new ArrayList<>();
 
     public Date getMoment() {
         return moment;
