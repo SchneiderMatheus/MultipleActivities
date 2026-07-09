@@ -1,10 +1,15 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Order {
     private Date moment;
     private OrderStatus status;
+
+    private List<Product> product = new ArrayList<>();
+
     public Date getMoment() {
         return moment;
     }
