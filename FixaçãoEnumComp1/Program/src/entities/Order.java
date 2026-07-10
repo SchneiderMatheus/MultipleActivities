@@ -11,6 +11,7 @@ public class Order {
     private List<OrderItem> orderItem = new ArrayList<>();
     private List<Client> clients = new ArrayList<>();
 
+    
     public Date getMoment() {
         return moment;
     }
@@ -32,5 +33,13 @@ public class Order {
         orderItem.remove(item);
     }
 
+    public Double total(){
+        double total =0;
+         for(OrderItem c :orderItem){
+            total += c.getPrice()*c.getQuantity();
+        }
+        return total;
+    }
+    
 
 }
