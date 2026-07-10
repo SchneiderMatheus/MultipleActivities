@@ -39,6 +39,9 @@ public class Order {
     public void removeClient(Client client){
         clients.remove(client);
     }
+    public void addBirth(Date dateBirth){
+        clients.remove(dateBirth);
+    }
     public Double total(){
         double total =0;
          for(OrderItem c :orderItem){
