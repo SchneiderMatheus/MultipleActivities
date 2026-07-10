@@ -25,4 +25,11 @@ public class OrderItem {
     public Double subTotal(){
         return quantity*price;
     }
+    /*public void addProduct(Product product){
+        product.setName(product);
+    }
+
+    public void removeProduct(Product product){
+       product.remove(product);
+    } */
 }

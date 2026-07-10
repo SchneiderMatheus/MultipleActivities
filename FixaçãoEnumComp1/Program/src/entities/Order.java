@@ -32,7 +32,13 @@ public class Order {
     public void removeItem(OrderItem item){
         orderItem.remove(item);
     }
+    public void addClient(Client client){
+        clients.add(client);
+    }
 
+    public void removeClient(Client client){
+        clients.remove(client);
+    }
     public Double total(){
         double total =0;
          for(OrderItem c :orderItem){
@@ -40,6 +46,6 @@ public class Order {
         }
         return total;
     }
-    
+
 
 }
