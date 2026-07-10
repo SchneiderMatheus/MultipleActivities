@@ -23,9 +23,10 @@ public class App {
         System.out.print("Birth date (DD/MM/YYYY): ");
         String stringDate = sc.nextLine();
 
-        LocalDate  dateBirth = LocalDate.parse(stringDate,dtf);
 
-        Client c1 = new Client(name, email, dtf.parse(stringDate));
+        Client c1 = new Client(name, email, stringDate);
+
+        
 
         sc.close();
     }
