@@ -1,14 +1,16 @@
 package entities;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class OrderItem {
     private Integer quantity;
     private Double price;
 
-    private List<Product> product = new ArrayList<>();
+    private Product product;
     
+    
+    public OrderItem(Product product) {
+        this.product = product;
+    }
     public Integer getQuantity() {
         return quantity;
     }

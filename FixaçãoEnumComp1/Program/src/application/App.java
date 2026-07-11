@@ -5,6 +5,8 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Client;
+import entities.OrderItem;
+import entities.Product;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -26,7 +28,21 @@ public class App {
 
         Client c1 = new Client(name, email, stringDate);
 
-        
+        System.out.print("How many items to this order?");
+        int n = sc.nextInt();
+        for(int i =0;i>n;i++){
+            System.out.println("Enter "+i+" item data: ");
+            System.out.print("Product name:");
+            String nameProduct = sc.nextLine();
+            System.out.print("Product price: ");
+            double price = sc.nextDouble();
+            System.out.println();
+            System.out.print("Quantity: ");
+            int quantity = sc.nextInt();
+
+            Product product = new Product(nameProduct, price);
+            OrdemtItem orderItem = new OrderItem(quantity);
+        }
 
         sc.close();
     }
