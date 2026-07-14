@@ -1,16 +1,15 @@
 package entities;
 
-import java.sql.Date;
-import java.time.DateTimeException;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Client {
     private String name;
     private String email;
-    private LocalDate birthDate;
+    private String birthDate;
     
-    public Client(String name, String email, LocalDate birthDate) {
+    public Client(String name, String email, String birthDate) {
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
@@ -27,9 +26,10 @@ public class Client {
         return birthDate;
     }
 
-    public String getFormattedBirthDate(){
+    public LocalDate getFormattedBirthDate(){
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return birthDate.format(fmt);
+        LocalDate dataConvertida = LocalDate.parse(birthDate,fmt);
+        return  dataConvertida;
     }
 
     

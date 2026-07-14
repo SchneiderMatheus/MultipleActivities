@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Client;
-import entities.OrderItem;
+import entities.OrdemItem;
 import entities.Product;
 
 import java.time.LocalDate;
@@ -41,7 +41,7 @@ public class App {
             int quantity = sc.nextInt();
 
             Product product = new Product(nameProduct, price);
-            OrdemtItem orderItem = new OrderItem(quantity);
+            OrdemItem orderItem = new OrdemItem(quantity, price, product);
         }
 
         sc.close();

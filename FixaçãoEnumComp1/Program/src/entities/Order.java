@@ -8,7 +8,7 @@ public class Order {
     private Date moment;
     private OrderStatus status;
 
-    private List<OrderItem> orderItem = new ArrayList<>();
+    private List<OrdemItem> orderItem = new ArrayList<>();
     private List<Client> clients = new ArrayList<>();
 
     
@@ -25,11 +25,11 @@ public class Order {
         this.status = status;
     }
 
-    public void addItem(OrderItem item){
+    public void addItem(OrdemItem item){
         orderItem.add(item);
     }
 
-    public void removeItem(OrderItem item){
+    public void removeItem(OrdemItem item){
         orderItem.remove(item);
     }
     public void addClient(Client client){
@@ -44,7 +44,7 @@ public class Order {
     }
     public Double total(){
         double total =0;
-         for(OrderItem c :orderItem){
+         for(OrdemItem c :orderItem){
             total += c.getPrice()*c.getQuantity();
         }
         return total;
