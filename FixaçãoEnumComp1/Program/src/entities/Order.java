@@ -40,7 +40,7 @@ public class Order {
         clients.remove(client);
     }
     public void addBirth(Date dateBirth){
-        clients.remove(dateBirth);
+        clients.remove();
     }
     public Double total(){
         double total =0;
