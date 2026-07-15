@@ -11,6 +11,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        OrdemItem orderItem = new OrdemItem(null, null, null);
 
         System.out.println("Enter client data: ");
         System.out.print("Name: ");
@@ -27,7 +28,7 @@ public class App {
         int n = sc.nextInt();
         sc.nextLine();
 
-        for(int i = 1;i>n;i++){
+        for(int i = 1;i<=n;i++){
             System.out.println("Enter "+i+" item data: ");
             System.out.print("Product name:");
             String nameProduct = sc.nextLine();
@@ -38,11 +39,12 @@ public class App {
             int quantity = sc.nextInt();
 
             Product product = new Product(nameProduct, price);
-            OrdemItem orderItem = new OrdemItem(quantity, price, product);
+            orderItem = new OrdemItem(quantity, price, product);
             System.out.println(orderItem);
         }
 
         System.out.println(c1);
+        System.out.println(orderItem);
 
         sc.close();
     }
