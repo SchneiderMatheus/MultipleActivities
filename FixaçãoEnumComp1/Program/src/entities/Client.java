@@ -31,6 +31,9 @@ public class Client {
         LocalDate dataConvertida = LocalDate.parse(birthDate,fmt);
         return  dataConvertida;
     }
+    public String toString(){
+        return name + ", " + email + "," + birthDate;
+    }
 
     
 }

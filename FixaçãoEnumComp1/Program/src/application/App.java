@@ -1,14 +1,9 @@
 package application;
-
-import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
-
 import entities.Client;
 import entities.OrdemItem;
 import entities.Product;
-
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class App {
@@ -30,7 +25,9 @@ public class App {
 
         System.out.print("How many items to this order?");
         int n = sc.nextInt();
-        for(int i =0;i>n;i++){
+        sc.nextLine();
+
+        for(int i = 1;i>n;i++){
             System.out.println("Enter "+i+" item data: ");
             System.out.print("Product name:");
             String nameProduct = sc.nextLine();
@@ -42,7 +39,10 @@ public class App {
 
             Product product = new Product(nameProduct, price);
             OrdemItem orderItem = new OrdemItem(quantity, price, product);
+            System.out.println(orderItem);
         }
+
+        System.out.println(c1);
 
         sc.close();
     }

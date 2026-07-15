@@ -30,5 +30,8 @@ public class OrdemItem {
     public Double subTotal(){
         return quantity*price;
     }
-   
+
+    public String toString(){
+        return quantity + ", " + price + "," + product;
+    }
 }
