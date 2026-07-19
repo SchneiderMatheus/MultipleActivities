@@ -7,12 +7,10 @@ public class OrdemItem {
 
     private Product product;
     
-    
-    
-    public OrdemItem(Integer quantity, Double price, Product product) {
+    public OrdemItem(Integer quantity,  Product product) {
         this.quantity = quantity;
-        this.price = price;
         this.product = product;
+        this.price = product.getPrice();
     }
     public Integer getQuantity() {
         return quantity;
