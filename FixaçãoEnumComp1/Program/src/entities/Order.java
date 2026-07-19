@@ -7,11 +7,17 @@ import java.util.List;
 public class Order {
     private Date moment;
     private OrderStatus status;
+    private Client client;
 
     private List<OrdemItem> orderItem = new ArrayList<>();
-    private List<Client> clients = new ArrayList<>();
-
     
+    public void setClient(Client client){
+        this.client= client;
+    }
+    
+    public Client getClient() {
+        return client;
+    }
     public Date getMoment() {
         return moment;
     }
@@ -32,14 +38,7 @@ public class Order {
     public void removeItem(OrdemItem item){
         orderItem.remove(item);
     }
-    public void addClient(Client client){
-        clients.add(client);
-    }
-
-    public void removeClient(Client client){
-        clients.remove(client);
-    }
-
+    
     
     public Double total(){
         double total =0;

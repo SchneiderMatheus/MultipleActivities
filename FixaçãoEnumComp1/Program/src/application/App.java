@@ -57,7 +57,9 @@ public class App {
         Product bolacha = new Product("bolacha", 9.9);
         Product salgadinho = new Product("Salgadinho", 12.5);
 
+        Client bibi = new Client("Bibi", "bibi@bibi.com", null);
         Order pedidoBibi = new Order();
+        pedidoBibi.setClient(bibi);
         pedidoBibi.setStatus(OrderStatus.PROCESSING);
         OrdemItem item1 = new OrdemItem(1, salgadinho);
         OrdemItem item2 = new OrdemItem(2, bolacha);
@@ -67,6 +69,7 @@ public class App {
         pedidoBibi.addItem(item2);
 
         System.out.println(pedidoBibi.total());
+        System.out.println(pedidoBibi.getClient().getEmail());
 
     }
 }
