@@ -1,11 +1,12 @@
 package entities;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Order {
-    private Date moment;
+    private LocalDateTime moment;
     private OrderStatus status;
     private Client client;
 
@@ -18,10 +19,10 @@ public class Order {
     public Client getClient() {
         return client;
     }
-    public Date getMoment() {
+    public LocalDateTime getMoment() {
         return moment;
     }
-    public void setMoment(Date moment) {
+    public void setMoment(LocalDateTime moment) {
         this.moment = moment;
     }
     public OrderStatus getStatus() {

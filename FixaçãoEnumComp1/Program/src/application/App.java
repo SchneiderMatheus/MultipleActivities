@@ -56,11 +56,13 @@ public class App {
 
         Product bolacha = new Product("bolacha", 9.9);
         Product salgadinho = new Product("Salgadinho", 12.5);
+        LocalDateTime now = LocalDateTime.now();
 
         Client bibi = new Client("Bibi", "bibi@bibi.com", null);
         Order pedidoBibi = new Order();
         pedidoBibi.setClient(bibi);
         pedidoBibi.setStatus(OrderStatus.PROCESSING);
+        pedidoBibi.setMoment(now);
         OrdemItem item1 = new OrdemItem(1, salgadinho);
         OrdemItem item2 = new OrdemItem(2, bolacha);
         item2.setPrice(9.0);
