@@ -12,6 +12,9 @@ public class OrdemItem {
         this.product = product;
         this.price = product.getPrice();
     }
+    public Product getProduct(){
+        return product;
+    }
     public Integer getQuantity() {
         return quantity;
     }

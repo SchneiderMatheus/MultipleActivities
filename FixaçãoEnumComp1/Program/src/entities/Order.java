@@ -2,7 +2,6 @@ package entities;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Order {
@@ -47,6 +46,17 @@ public class Order {
             total += c.getPrice()*c.getQuantity();
         }
         return total;
+    }
+
+    public String toString(){
+        return "Order Summary: \n"
+        + "Order Moment: " + getMoment() + "\n" 
+        + "Client: " + client.getName() + " " + client.getBirthDate() + " - " + client.getEmail()
+        + "Order items: \n" 
+        +  for (OrdemItem i: orderItem ){
+            System.out.print(i.getProduct().getName()+", Quantity: "+ i.getQuantity() + ", Subtotal: "+ i.subTotal());
+        }
+        + 
     }
 
 
