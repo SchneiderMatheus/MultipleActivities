@@ -4,7 +4,6 @@ package entities;
 public class OrdemItem {
     private Integer quantity;
     private Double price;
-
     private Product product;
     
     public OrdemItem(Integer quantity,  Product product) {
@@ -33,6 +32,6 @@ public class OrdemItem {
     }
 
     public String toString(){
-        return product.getName() + ",R$"+ price +  ", Quantity: " + quantity + ", subtotal: R$" + subTotal();
+        return product.getName() + ", R$"+ price +  ", Quantity: " + quantity + ", subtotal: R$" + subTotal();
     }
 }
