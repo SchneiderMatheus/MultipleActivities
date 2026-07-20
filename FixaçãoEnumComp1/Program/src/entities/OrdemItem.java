@@ -33,6 +33,6 @@ public class OrdemItem {
     }
 
     public String toString(){
-        return quantity + ", " + price + "," + product;
+        return product.getName() + ",R$"+ price +  ", Quantity: " + quantity + ", subtotal: R$" + subTotal();
     }
 }

@@ -55,10 +55,9 @@ public class Order {
         sb.append("Order Moment: " +moment + "\n" );
         sb.append("Order Status: "+ status);
         sb.append("\nClient: " + client.getName() + " " + client.getBirthDate() + " - " + client.getEmail());
-        sb.append("\nOrder Items: ");
-        sb.append("Comments: \n");
+        sb.append("\nOrder Items: \n");
         for (OrdemItem i: orderItem){
-            sb.append(i.getProduct()+"\n");
+            sb.append(i.toString() +"\n");
         }
         sb.append("\nTotal price: R$"+total());
         return sb.toString();

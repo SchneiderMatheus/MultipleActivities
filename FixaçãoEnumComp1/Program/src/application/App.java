@@ -58,7 +58,7 @@ public class App {
         Product salgadinho = new Product("Salgadinho", 12.5);
         LocalDateTime now = LocalDateTime.now();
 
-        Client bibi = new Client("Bibi", "bibi@bibi.com", null);
+        Client bibi = new Client("Bibi", "bibi@bibi.com", "06/03/1997");
         Order pedidoBibi = new Order();
         pedidoBibi.setClient(bibi);
         pedidoBibi.setStatus(OrderStatus.PROCESSING);
@@ -70,8 +70,8 @@ public class App {
         pedidoBibi.addItem(item1);
         pedidoBibi.addItem(item2);
 
-        System.out.println(pedidoBibi.total());
-        System.out.println(pedidoBibi.getClient().getEmail());
+        System.out.println(pedidoBibi);
+        
 
     }
 }
