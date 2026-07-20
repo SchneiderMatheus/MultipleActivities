@@ -40,16 +40,16 @@ public class App {
             String nameProduct = sc.nextLine();
             System.out.print("Product price: ");
             double price = sc.nextDouble();
-            System.out.println();
             System.out.print("Quantity: ");
             int quantity = sc.nextInt();
+            sc.nextLine();
 
             Product product = new Product(nameProduct, price);
             OrdemItem ordemItem = new OrdemItem(quantity, product);
             pedido.addItem(ordemItem);
             
          }
-
+        System.out.println();
         System.out.println(pedido);
         sc.close();
 
