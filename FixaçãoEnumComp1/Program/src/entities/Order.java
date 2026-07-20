@@ -49,14 +49,19 @@ public class Order {
     }
 
     public String toString(){
-        return "Order Summary: \n"
-        + "Order Moment: " + getMoment() + "\n" 
-        + "Client: " + client.getName() + " " + client.getBirthDate() + " - " + client.getEmail()
-        + "Order items: \n" 
-        +  for (OrdemItem i: orderItem ){
-            System.out.print(i.getProduct().getName()+", Quantity: "+ i.getQuantity() + ", Subtotal: "+ i.subTotal());
+        StringBuilder sb = new StringBuilder();
+        
+        sb.append("Order Summary: \n");
+        sb.append("Order Moment: " +moment + "\n" );
+        sb.append("Order Status: "+ status);
+        sb.append("\nClient: " + client.getName() + " " + client.getBirthDate() + " - " + client.getEmail());
+        sb.append("\nOrder Items: ");
+        sb.append("Comments: \n");
+        for (OrdemItem i: orderItem){
+            sb.append(i.getProduct()+"\n");
         }
-        + 
+        sb.append("\nTotal price: R$"+total());
+        return sb.toString();
     }
 
 
