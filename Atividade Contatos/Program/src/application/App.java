@@ -34,10 +34,14 @@ public class App {
                 System.out.println();
                 break;
             case 2:
-                
+                System.out.println("Lista de Contatos: ");
+                for (Contacts contacts : listaContatos) {
+            System.out.println(contacts);
+                }
                 break;
             case 3:
-                
+                System.out.println("Informe o contato que você gostaria de mudar as ifnromações");
+                String nameVerificar = sc.nextLine();
                 break;
             case 4:
                 
@@ -49,9 +53,7 @@ public class App {
 
                 break;
         }
-        for (Contacts contacts : listaContatos) {
-            System.out.println(contacts);
-        }
         sc.close();
+        return;
     }
 }
