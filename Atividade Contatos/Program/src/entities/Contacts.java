@@ -4,6 +4,9 @@ public class Contacts {
     private String name;
     private String phone;
     private String email;
+    
+    public Contacts (){
+    }
 
     public Contacts (String name, String phone, String email){
         this.name = name;
@@ -29,5 +32,5 @@ public class Contacts {
     public void setEmail(String email){
         this.email = email;
     }
-
+    
 }

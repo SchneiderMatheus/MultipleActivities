@@ -21,7 +21,15 @@ public class App {
 
         switch (n) {
             case 1:
-                
+                System.out.println("Digite as informações do novo contato: ");
+                System.out.print("Nome: ");
+                String name = sc.nextLine();
+                System.out.print("telefone: ");
+                String phone = sc.nextLine();
+                System.out.print("E-mail: ");
+                String email = sc.nextLine();
+                Contacts contato = new Contacts(name,phone,email);
+                listaContatos.add(contato);
                 break;
             case 2:
                 
@@ -37,7 +45,11 @@ public class App {
                 break;
             default:
 
-                return;
+                break;
         }
+        for (Contacts contacts : listaContatos) {
+            System.out.println(contacts);
+        }
+        sc.close();
     }
 }
