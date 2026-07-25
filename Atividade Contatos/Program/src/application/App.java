@@ -11,13 +11,14 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         List<Contacts> listaContatos = new ArrayList<>();
-        System.out.println("1 - Adiconar novo contato.");
+        System.out.println("1 - Adicionar novo contato.");
         System.out.println("2 - Visualizar contatos.");
         System.out.println("3 - Atualizar o telefone e e-mail de um contato existente.");
         System.out.println("4 - Remover um contato da lista.");
         System.out.println("5 - Sair do programa.");
         System.out.println("Selecione a opção desejada (1 até 5)");
         int n = sc.nextInt();
+        sc.nextLine();
 
         switch (n) {
             case 1:
@@ -30,6 +31,7 @@ public class App {
                 String email = sc.nextLine();
                 Contacts contato = new Contacts(name,phone,email);
                 listaContatos.add(contato);
+                System.out.println();
                 break;
             case 2:
                 

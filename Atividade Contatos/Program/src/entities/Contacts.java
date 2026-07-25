@@ -33,4 +33,7 @@ public class Contacts {
         this.email = email;
     }
     
+    public String toString(){
+        return name + ", " + phone + ", " + email;
+    }
 }
