@@ -1,18 +1,13 @@
-## Getting Started
+"Crie um sistema de agenda de contatos em Java utilizando os conceitos de classes, encapsulamento e ArrayList. O sistema deve ter um menu interativo no terminal com as seguintes opções:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Adicionar novo contato (solicitando nome, telefone e e-mail).
 
-## Folder Structure
+Visualizar todos os contatos cadastrados (listando um por um).
 
-The workspace contains two folders by default, where:
+Atualizar o telefone e e-mail de um contato existente (buscando pelo nome).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Remover um contato da lista (buscando pelo nome).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Sair do programa.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Regras: O programa deve continuar rodando até que o usuário escolha sair. Trate os casos em que a lista está vazia ou o contato não é encontrado."
