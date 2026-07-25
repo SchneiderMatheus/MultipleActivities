@@ -36,12 +36,25 @@ public class App {
             case 2:
                 System.out.println("Lista de Contatos: ");
                 for (Contacts contacts : listaContatos) {
-            System.out.println(contacts);
+                System.out.println(contacts);
                 }
                 break;
             case 3:
-                System.out.println("Informe o contato que você gostaria de mudar as ifnromações");
+                System.out.println("Informe o contato que você gostaria de mudar as informações");
                 String nameVerificar = sc.nextLine();
+                for (Contacts contatos : listaContatos){
+                    if (nameVerificar.equalsIgnoreCase(contatos.getName())) {
+                        System.out.println("Digite o novo telefone: ");
+                        String phoneNovo = sc.nextLine();
+                        contatos.setPhone(phoneNovo);
+                        System.out.println("Digite o novo e-mail: ");
+                        String emailNovo = sc.nextLine();
+                        contatos.setEmail(emailNovo);
+                    }
+                    else 
+                        System.out.println("Contato não encontrado!");
+                }
+
                 break;
             case 4:
                 
