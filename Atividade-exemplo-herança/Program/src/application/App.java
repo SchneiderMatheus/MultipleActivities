@@ -42,7 +42,10 @@ public class App {
             SavingsAccount acc5 = (SavingsAccount)acc3;
             acc5.updateBalance(1.0);
             System.out.println("Balance of "+ acc5.getHolder()+" : "+acc5.getBalance());
+            System.out.println(acc5);
         }
+
+        
         sc.close();
     }
 }

@@ -18,4 +18,8 @@ public class SavingsAccount extends Account {
     public void updateBalance(Double interestRate){
         balance += balance*interestRate;
     }
+    public String toString(){
+        return getNumber() +" "+ getHolder() + " " + getBalance() + " " + interestRate;
+
+    }
 }

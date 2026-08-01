@@ -26,4 +26,9 @@ public class BusinessAccount extends Account {
         }
         
     }
+
+    public String toString(){
+        return getNumber() +" "+ getHolder() + " " + getBalance() + " " + loanLimit;
+
+    }
 }
