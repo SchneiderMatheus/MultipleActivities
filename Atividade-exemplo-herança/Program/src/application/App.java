@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import entities.Account;
 import entities.BusinessAccount;
+import entities.SavingsAccount;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -20,6 +21,11 @@ public class App {
 
         Account acc1 = contaEmpresa;
         Account acc2 = new BusinessAccount(3, "Anna", 0.0, 1000.0);
+        Account acc3 = new SavingsAccount(3, "Alex", 0.0, 0.01);
+        System.out.println(acc1);
+        System.out.println(acc2);
+        System.out.println(acc3);
+        
         sc.close();
     }
 }
