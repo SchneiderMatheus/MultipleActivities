@@ -38,7 +38,7 @@ public class Account {
         balance += amount;
     }
     public void wihtdraw(Double amount) {
-        balance -= amount;
+        balance -= amount + 5.0;
     }
 
     public String toString(){
