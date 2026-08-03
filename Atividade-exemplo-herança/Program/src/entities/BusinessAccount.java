@@ -26,6 +26,11 @@ public class BusinessAccount extends Account {
         }
         
     }
+    @Override
+    public void wihtdraw(Double amount) {
+        super.wihtdraw(amount);
+        balance -= 2.0;
+    }
 
     public String toString(){
         return getNumber() +" "+ getHolder() + " " + getBalance() + " " + loanLimit;

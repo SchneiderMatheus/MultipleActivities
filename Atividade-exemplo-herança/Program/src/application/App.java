@@ -53,6 +53,10 @@ public class App {
         System.out.println("ACC Override funcionando");
 
         System.out.println(acc7);
+
+        Account acc8 = new BusinessAccount(1003,"Bob", 1000.0,500.0);
+        acc8.wihtdraw(200.0);
+        System.out.println(acc8);
         sc.close();
     }
 }
