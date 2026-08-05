@@ -16,7 +16,8 @@ public class App {
         if (escolha =='i' || escolha == 'I') {
             valor = valor *2.54;
             System.out.println("Em Centímetros o valor digitado fica: "+valor);
-        }
+        } else
+            System.out.println("Escolha Inválida!");
 
         sc.close();
     }

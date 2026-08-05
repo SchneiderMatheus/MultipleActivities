@@ -1,18 +1,20 @@
-## Getting Started
+Essa atividade foi feita para a matéria Algoritmos e Programação 2;
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Desenvolva um programa em Java que converta valores entre centímetros e
+polegadas, utilizando uma estrutura condicional if-else.
+O usuário deverá informar:
+• um valor numérico;
+• uma unidade de medida, representada por um caractere:
+o c para centímetros;
+o i para polegadas.
+O programa deverá realizar a conversão para a unidade oposta e apresentar o
+resultado na tela.
+Considere que:
+1 polegada = 2,54 centímetros
+Exemplos de entrada
+20 i
+O programa deverá converter 20 polegadas para centímetros.
+20 c
+O programa deverá converter 20 centímetros para polegadas.
+Caso seja informada uma unidade diferente de c ou i, o programa deverá
+apresentar uma mensagem de unidade inválida.
