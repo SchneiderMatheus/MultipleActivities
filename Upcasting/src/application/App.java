@@ -12,7 +12,16 @@ public class App {
 
         double media = (m1 + m2 + m3) / 3;
         System.out.println("Sua média é: " + media);
-        
+        System.out.println("Entre com a sua quantidade de faltas: ");
+        int faltas = sc.nextInt(); 
+        if (media >= 7 && faltas <= 10) {
+            System.out.println("Aprovado");
+        } else if (media < 7 && faltas <= 10) {
+            System.out.println("Recuperação");
+        } else {
+            System.out.println("Reprovado");
+        }
+
         sc.close();
     }
 }
