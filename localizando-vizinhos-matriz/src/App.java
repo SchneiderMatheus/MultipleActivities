@@ -35,7 +35,7 @@ public class App {
                         System.out.println("Esquerda:"+matriz[i][j-1]);
                     }
 
-                    if (j < j -1) {
+                    if (j < i -1) {
                         System.out.println("Direita:"+matriz[i][j+1]);
                     }
 
@@ -43,7 +43,7 @@ public class App {
                         System.out.println("Cima:"+matriz[i-1][j]);
                     }
 
-                    if (i < i + 1) {
+                    if (i < j + 1) {
                         System.out.println("baixo:"+matriz[i+1][j]);
                     }
                 }
