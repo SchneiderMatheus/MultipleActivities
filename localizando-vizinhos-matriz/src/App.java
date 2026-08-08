@@ -22,6 +22,22 @@ public class App {
             }
             System.out.println();
         }
+
+        System.out.print("Select a number: ");
+        int escolha = sc.nextInt();
+        
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                if (escolha == matriz[i][j]) {
+                    System.out.println("Posição:"+i+":"+j);
+
+                    if (escolha -1 >=0) {
+                        System.out.println("Esquerda:"+matriz[i][j-1]);
+                    }
+                }
+            }
+        }
+
         sc.close();
     }
 }
