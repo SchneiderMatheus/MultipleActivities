@@ -31,8 +31,20 @@ public class App {
                 if (escolha == matriz[i][j]) {
                     System.out.println("Posição:"+i+":"+j);
 
-                    if (escolha -1 >=0) {
+                    if (matriz[i][j-1] >= 0) {
                         System.out.println("Esquerda:"+matriz[i][j-1]);
+                    }
+
+                    if (matriz[i][j+1] <= matriz[j].length) {
+                        System.out.println("Direita:"+matriz[i][j+1]);
+                    }
+
+                    if (matriz[i-1][j]>=0) {
+                        System.out.println("Cima:"+matriz[i-1][j]);
+                    }
+
+                    if (matriz[i+1][j]<=matriz[i].length) {
+                        System.out.println("baixo:"+matriz[i+1][j]);
                     }
                 }
             }
