@@ -12,10 +12,11 @@ public class App {
 
         for (int casa=1; casa <= 64; casa++) {
             totalGraos = totalGraos.add(graosCasa);
-            System.out.println("Casa: "+casa+", Grãos: "+totalGraos);
+            System.out.println("Casa: "+casa+", Grãos: "+graosCasa);
             graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
         }
         
+        System.out.println("Grãos: "+totalGraos);
         sc.close();
     }
 }
