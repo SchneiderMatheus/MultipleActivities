@@ -10,15 +10,18 @@ public class App {
         java.math.BigInteger totalGraos = java.math.BigInteger.ZERO;
         java.math.BigInteger graosCasa = java.math.BigInteger.ONE;
 
-        int casa100, casa1000;
+        boolean encontrouMill = false;
+        boolean encontrouMilhao = false;
+        boolean encontroubilhao = false;
 
         for (int casa=1; casa <= 64; casa++) {
             totalGraos = totalGraos.add(graosCasa);
+            if (totalGraos.compareTo(totalGraos) >= 1000) {
+                encontrouMill = true;
+            }
             System.out.println("Casa: "+casa+", Grão na casa: "+graosCasa+" Total Acumulado: "+totalGraos);
             graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
-            if (totalGraos.compareTo(totalGraos) >= 100) {
-                
-            }
+            
         }
         
         System.out.println("Grãos: "+totalGraos);
