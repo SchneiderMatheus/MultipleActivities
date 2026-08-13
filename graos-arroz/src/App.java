@@ -7,7 +7,14 @@ public class App {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
         
-        
+        java.math.BigInteger totalGraos = java.math.BigInteger.ZERO;
+        java.math.BigInteger graosCasa = java.math.BigInteger.ONE;
+
+        for (int casa=1; casa <= 64; casa++) {
+            totalGraos = totalGraos.add(graosCasa);
+            System.out.println("Casa: "+casa+", Grãos: "+totalGraos);
+            graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
+        }
         
         sc.close();
     }
