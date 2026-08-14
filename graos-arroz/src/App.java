@@ -1,3 +1,4 @@
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -10,21 +11,30 @@ public class App {
         java.math.BigInteger totalGraos = java.math.BigInteger.ZERO;
         java.math.BigInteger graosCasa = java.math.BigInteger.ONE;
 
-        boolean encontrouMill = false;
-        boolean encontrouMilhao = false;
-        boolean encontroubilhao = false;
+
+        int casaCerta1=0,casaCerta2=0, casaCerta3=0;
 
         for (int casa=1; casa <= 64; casa++) {
             totalGraos = totalGraos.add(graosCasa);
-            if (totalGraos.compareTo(totalGraos) >= 1000) {
-                encontrouMill = true;
+            if (totalGraos.compareTo(totalGraos) >= 1000 && totalGraos.compareTo(totalGraos)<1000000) {
+                casaCerta1 = casa;
             }
+            if (totalGraos.compareTo(totalGraos) >= 1000000 && totalGraos.compareTo(totalGraos)<1000000000) {
+                casaCerta2 = casa;
+            }
+            if (totalGraos.compareTo(totalGraos) >= 1000000000) {
+                casaCerta3 = casa;
+            }
+
             System.out.println("Casa: "+casa+", Grão na casa: "+graosCasa+" Total Acumulado: "+totalGraos);
             graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
             
         }
-        
+        System.out.println("-----------------------------------------------");
         System.out.println("Grãos: "+totalGraos);
+        System.out.println("Para chegar a mil grãos são necessarias: "+casaCerta1+" casas");
+        System.out.println("Para chegar a milhão grãos são necessarias: "+casaCerta2+" casas");
+        System.out.println("Para chegar a bilhão grãos são necessarias: "+casaCerta3+" casas");
         sc.close();
     }
 }
