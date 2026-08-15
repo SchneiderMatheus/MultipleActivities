@@ -1,4 +1,5 @@
 
+import java.math.BigInteger;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -11,18 +12,22 @@ public class App {
         java.math.BigInteger totalGraos = java.math.BigInteger.ZERO;
         java.math.BigInteger graosCasa = java.math.BigInteger.ONE;
 
+        final BigInteger MIL = new BigInteger("1000");
+        final BigInteger MILHAO = new BigInteger("1000000");
+        final BigInteger BILHAO = new BigInteger("1000000000");
 
         int casaCerta1=0,casaCerta2=0, casaCerta3=0;
 
         for (int casa=1; casa <= 64; casa++) {
             totalGraos = totalGraos.add(graosCasa);
-            if (totalGraos.compareTo(totalGraos) >= 1000 && totalGraos.compareTo(totalGraos)<1000000) {
+
+            if (totalGraos.compareTo(MIL) >= 0 && casaCerta1==0) {
                 casaCerta1 = casa;
             }
-            if (totalGraos.compareTo(totalGraos) >= 1000000 && totalGraos.compareTo(totalGraos)<1000000000) {
+            if (totalGraos.compareTo(MILHAO) >= 0 && casaCerta2==0) {
                 casaCerta2 = casa;
             }
-            if (totalGraos.compareTo(totalGraos) >= 1000000000) {
+            if (totalGraos.compareTo(BILHAO) >= 0 && casaCerta3==0) {
                 casaCerta3 = casa;
             }
 
