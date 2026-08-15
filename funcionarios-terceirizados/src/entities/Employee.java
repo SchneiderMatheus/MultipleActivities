@@ -32,4 +32,7 @@ public class Employee {
         this.valuePerHour = valuePerHour;
     }
     
+    public String toString(){
+        return name +", "+ hours +", "+ valuePerHour;
+    }
 }
