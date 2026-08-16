@@ -16,6 +16,8 @@ public class App {
         final BigInteger MILHAO = new BigInteger("1000000");
         final BigInteger BILHAO = new BigInteger("1000000000");
 
+        BigInteger [][] tabuleiro = new BigInteger[8][8];
+
         int casaCerta1=0,casaCerta2=0, casaCerta3=0;
 
         for (int casa=1; casa <= 64; casa++) {
@@ -31,9 +33,15 @@ public class App {
                 casaCerta3 = casa;
             }
 
+            for (int i = 0; i < tabuleiro.length; i++) {
+                for (int j = 0; j < tabuleiro.length; j++) {
+                    tabuleiro[i][j] = graosCasa;
+                }
+            }
             System.out.println("Casa: "+casa+", Grão na casa: "+graosCasa+" Total Acumulado: "+totalGraos);
             graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
             
+
         }
         System.out.println("-----------------------------------------------");
         System.out.println("Grãos: "+totalGraos);
