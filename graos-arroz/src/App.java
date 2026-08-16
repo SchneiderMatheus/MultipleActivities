@@ -33,11 +33,10 @@ public class App {
                 casaCerta3 = casa;
             }
 
-            for (int i = 0; i < tabuleiro.length; i++) {
-                for (int j = 0; j < tabuleiro.length; j++) {
-                    tabuleiro[i][j] = totalGraos;
-                }
-            }
+            int linha = (casa - 1) / 8;  
+            int coluna = (casa - 1) % 8;  
+            tabuleiro[linha][coluna] = graosCasa;  
+
             System.out.println("Casa: "+casa+", Grão na casa: "+graosCasa+" Total Acumulado: "+totalGraos);
             graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
             
