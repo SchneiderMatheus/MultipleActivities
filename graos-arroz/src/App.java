@@ -35,7 +35,7 @@ public class App {
 
             for (int i = 0; i < tabuleiro.length; i++) {
                 for (int j = 0; j < tabuleiro.length; j++) {
-                    tabuleiro[i][j] = graosCasa;
+                    tabuleiro[i][j] = totalGraos;
                 }
             }
             System.out.println("Casa: "+casa+", Grão na casa: "+graosCasa+" Total Acumulado: "+totalGraos);
@@ -48,6 +48,15 @@ public class App {
         System.out.println("Para chegar a mil grãos são necessarias: "+casaCerta1+" casas");
         System.out.println("Para chegar a milhão grãos são necessarias: "+casaCerta2+" casas");
         System.out.println("Para chegar a bilhão grãos são necessarias: "+casaCerta3+" casas");
+        System.out.println();
+        System.out.println("-----------------------------------------------");
+        
+        for (int i = 0; i < tabuleiro.length; i++) {
+            for (int j = 0; j < tabuleiro.length; j++) {
+                System.out.print(tabuleiro[i][j]+" ");
+            }
+            System.out.println();
+        }
         sc.close();
     }
 }
