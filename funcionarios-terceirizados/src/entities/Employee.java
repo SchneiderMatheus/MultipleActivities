@@ -32,6 +32,10 @@ public class Employee {
         this.valuePerHour = valuePerHour;
     }
     
+    public Double payment(){
+        return valuePerHour*hours;
+    }
+
     public String toString(){
         return name +", "+ hours +", "+ valuePerHour;
     }
