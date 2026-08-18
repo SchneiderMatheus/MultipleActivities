@@ -7,6 +7,12 @@ public class Employee {
 
     public Employee(){
     }
+    
+    public Employee(String name, Integer hours, Double valuePerHour) {
+        this.name = name;
+        this.hours = hours;
+        this.valuePerHour = valuePerHour;
+    }
 
     public String getName() {
         return name;
