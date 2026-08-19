@@ -37,7 +37,7 @@ public class App {
             int coluna = (casa - 1) % 8;  
             tabuleiro[linha][coluna] = graosCasa;  
 
-            System.out.println("Casa: "+casa+", Grão na casa: "+graosCasa+" Total Acumulado: "+totalGraos);
+            System.out.println("Casa: "+casa+"| Grão na casa: "+graosCasa+"| Total Acumulado: "+totalGraos);
             graosCasa = graosCasa.multiply(java.math.BigInteger.valueOf(2));
             
 
