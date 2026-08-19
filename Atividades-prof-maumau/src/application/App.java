@@ -1,5 +1,8 @@
+package application;
 import java.util.Locale;
 import java.util.Scanner;
+
+import entities.Pessoas;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,23 +14,13 @@ public class App {
         System.out.println("Quão alto é voce?");
         double altura =sc.nextDouble();
         
-        
-        double imc = calculo(peso,altura);
+        Pessoas pessoa = new Pessoas(altura,peso);
 
-        System.out.println(calculo(peso,altura));
+        System.out.println(pessoa);
+        
+
+    
         sc.close();
     }
 
-    public static double calculo(double peso, double altura){
-        System.out.println("");
-        double imc = peso / (altura *altura);
-
-        if (imc>19) {
-            System.out.println("Voce é saudável");
-        }
-        else if (imc > 26) {
-            System.out.println("Ta fortin!");
-        }
-        return imc;
-    }
 }
