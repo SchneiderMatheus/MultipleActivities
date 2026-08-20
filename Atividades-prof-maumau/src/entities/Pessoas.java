@@ -27,7 +27,7 @@ public class Pessoas {
         return peso / (altura *altura);
     }
 
-    public String imcResult(){
+    public String toString(){
         double imc = calcularImc(altura, peso);
         if (imc >= 25) {
             return"Voce está fortinho seu IMC é"+imc;
