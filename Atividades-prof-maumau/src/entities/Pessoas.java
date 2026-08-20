@@ -27,18 +27,18 @@ public class Pessoas {
         return peso / (altura *altura);
     }
 
-    public Double imcResult(){
+    public String imcResult(){
         double imc = calcularImc(altura, peso);
         if (imc >= 25) {
-            System.out.print("Voce está fortinho seu IMC é");
+            return"Voce está fortinho seu IMC é"+imc;
         } 
         if (imc >=19 && imc<=24){
-            System.out.print("Ta saúdavel e seu IMC é ");
+            return "Ta saúdavel e seu IMC é "+imc;
         }
         if (imc<19){
-            System.out.print("Ta fino de mais paizão seu imc é ");
+            return "Ta fino de mais paizão seu imc é "+imc;
         }
+        return null;
         
-        return imc;
     }
 }
