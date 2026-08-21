@@ -9,10 +9,12 @@ public class Exercicio2 {
     System.out.println("Bem vindo ao jogo da adivinhação!");
     int random = gerarNumero();
     int tentativa;
+    Scanner sc = new Scanner(System.in);
+    tentativa = sc.nextInt();
     
     do {
         System.out.println("Digite um número");
-        tentativa = tentativa();
+        tentativa = sc.nextInt();
         if (tentativa < random) {
             System.out.println("Mais alto");
         } else if (tentativa > random){
