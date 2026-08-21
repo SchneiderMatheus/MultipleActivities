@@ -6,7 +6,18 @@ import java.util.Scanner;
 public class Exercicio2 {
     public static void main(String[] args) {
         
+    System.out.println("Bem vindo ao jogo da adivinhação!");
+    int random = gerarNumero();
+    int tentativa;
     
+    do {
+        System.out.println("Digite um número");
+        tentativa = tentativa();
+    } while (tentativa != random);
+
+    if (tentativa == random) {
+        System.out.println("Voce Acertou");
+    }
 
     }
 
