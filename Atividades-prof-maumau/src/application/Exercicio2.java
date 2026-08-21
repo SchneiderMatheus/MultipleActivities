@@ -13,6 +13,11 @@ public class Exercicio2 {
     do {
         System.out.println("Digite um número");
         tentativa = tentativa();
+        if (tentativa < random) {
+            System.out.println("Mais alto");
+        } else if (tentativa > random){
+            System.out.println("passou do ponto");
+        }
     } while (tentativa != random);
 
     if (tentativa == random) {
