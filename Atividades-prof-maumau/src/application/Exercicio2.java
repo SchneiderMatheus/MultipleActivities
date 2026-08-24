@@ -10,6 +10,7 @@ public class Exercicio2 {
     int random = gerarNumero();
     int tentativa;
     Scanner sc = new Scanner(System.in);
+    System.out.println("De sua primeira tentativa: ");
     tentativa = sc.nextInt();
     
     do {
@@ -25,7 +26,7 @@ public class Exercicio2 {
     if (tentativa == random) {
         System.out.println("Voce Acertou");
     }
-
+        sc.close();
     }
 
     public static int gerarNumero(){
