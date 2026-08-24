@@ -12,6 +12,7 @@ public class Exercicio2 {
     Scanner sc = new Scanner(System.in);
     System.out.println("De sua primeira tentativa: ");
     tentativa = sc.nextInt();
+    tentativaValida(tentativa);
     
     do {
         System.out.println("Digite um número");
@@ -35,11 +36,12 @@ public class Exercicio2 {
         return numero;
     }
 
-    public static int tentativa(){
-        Scanner sc = new Scanner(System.in);
-        int tentativa = sc.nextInt();
-        sc.close();
-        return tentativa;
+    public static boolean tentativaValida(int tentativa){
+        if (tentativa < 101 && tentativa>=0) {
+            return true;
+        } else 
+            System.out.println("Tenatativa invalida!");
+            return false;
     }
 
 }
