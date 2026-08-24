@@ -18,16 +18,14 @@ public class Exercicio2 {
         System.out.println("Digite um número");
         tentativa = sc.nextInt();
         if (tentativa < random) {
-            System.out.println("Mais alto");
+            System.out.println("---Mais alto---");
         } else if (tentativa > random){
-            System.out.println("passou do ponto");
+            System.out.println("---Passou do ponto---");
         }
     } while (tentativa != random);
 
-    if (tentativa == random) {
-        System.out.println("Voce Acertou");
-    }
-        sc.close();
+    acertou(tentativa, random);
+    sc.close();
     }
 
     public static int gerarNumero(){
@@ -41,6 +39,14 @@ public class Exercicio2 {
             return true;
         } else 
             System.out.println("Tenatativa invalida!");
+            return false;
+    }
+
+    public static boolean acertou(int tentativa, int random){
+        if (tentativa == random) {
+            System.out.println("Voce Acertou");
+            return true;
+        } else
             return false;
     }
 
