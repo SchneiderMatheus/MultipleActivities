@@ -9,10 +9,22 @@ public class Exercicio3 {
         System.out.println("MENU");
         exibirMenu();
         char escolha = lerOpcao();
-        lerNumero1();
-        lerNumero2();
+        double a = lerNumero1();
+        double b = lerNumero2();
 
-        
+        if (escolha == 1) {
+            System.out.print("Soma é igual: ");
+            somar(a, b);
+        } else if (escolha == 2) {
+            System.out.print("Substração é igual: ");
+            subtrair(a, b);
+        } else if (escolha == 3) {
+            System.out.print("Multiplicação é igual: ");
+            multiplicar(a, b);
+        } else if (escolha == 4) {
+            System.out.print("Divisão é igual: ");
+            dividir(a, b);
+        }
 
     }
 
@@ -44,5 +56,21 @@ public class Exercicio3 {
         sc.close();
         return secondDouble;
         
+    }
+
+    public static double somar(double a, double b){
+        return a+b;
+    }
+
+    public static double subtrair(double a, double b){
+        return a-b;
+    }
+
+    public static double multiplicar(double a, double b){
+        return a*b;
+    }
+
+    public static double dividir(double a, double b){
+        return a/b;
     }
 }
