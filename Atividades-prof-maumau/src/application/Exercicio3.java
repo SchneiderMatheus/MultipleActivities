@@ -23,7 +23,10 @@ public class Exercicio3 {
             multiplicar(a, b);
         } else if (escolha == 4) {
             System.out.print("Divisão é igual: ");
-            dividir(a, b);
+            if (divisaoValida(b)) {
+                dividir(a, b);
+            } else
+                System.out.println("Divisor invalido");
         }
 
     }
@@ -72,5 +75,12 @@ public class Exercicio3 {
 
     public static double dividir(double a, double b){
         return a/b;
+    }
+
+    public static boolean divisaoValida(double b){
+        if (b >0) {
+            return true;
+        } else
+            return false;
     }
 }
