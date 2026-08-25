@@ -3,30 +3,25 @@ package application;
 import java.util.Scanner;
 
 public class Exercicio3 {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        
-
         System.out.println("MENU");
         exibirMenu();
         char escolha = lerOpcao();
         double a = lerNumero1();
         double b = lerNumero2();
 
-        if (escolha == 1) {
-            System.out.print("Soma é igual: ");
-            somar(a, b);
-        } else if (escolha == 2) {
-            System.out.print("Substração é igual: ");
-            subtrair(a, b);
-        } else if (escolha == 3) {
-            System.out.print("Multiplicação é igual: ");
-            multiplicar(a, b);
-        } else if (escolha == 4) {
-            System.out.print("Divisão é igual: ");
+        if (escolha == '1') {
+            System.out.print("Soma é igual: "+somar(a, b));
+        } else if (escolha == '2') {
+            System.out.print("Substração é igual: "+subtrair(a, b));
+        } else if (escolha == '3') {
+            System.out.println("Multiplicação é igual a: "+multiplicar(a, b));
+        } else if (escolha == '4') {
             if (divisaoValida(b)) {
-                dividir(a, b);
+                System.out.println("A divisão é igual a: "+dividir(a, b));
             } else
-                System.out.println("Divisor invalido");
+                System.out.println("Divisor inválido");
         }
 
     }
@@ -36,27 +31,24 @@ public class Exercicio3 {
     }
 
     public static char lerOpcao(){
-        Scanner sc = new Scanner(System.in);
+        
         System.out.print("Escolha uma opção:");
         char escolha = sc.next().charAt(0);
-        sc.close();
         return escolha;
     }
 
     public static double lerNumero1(){
-        Scanner sc = new Scanner(System.in);
+        
         System.out.print("Primeiro número: ");
         double firstDouble = sc.nextDouble();
-        sc.close();
         return firstDouble;
         
     }
 
     public static double lerNumero2(){
-        Scanner sc = new Scanner(System.in);
+       
         System.out.print("Segundo número: ");
         double secondDouble = sc.nextDouble();
-        sc.close();
         return secondDouble;
         
     }
