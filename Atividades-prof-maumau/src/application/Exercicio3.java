@@ -8,7 +8,11 @@ public class Exercicio3 {
 
         System.out.println("MENU");
         exibirMenu();
-        lerOpcao();
+        char escolha = lerOpcao();
+        lerNumero1();
+        lerNumero2();
+
+        
 
     }
 
@@ -22,5 +26,23 @@ public class Exercicio3 {
         char escolha = sc.next().charAt(0);
         sc.close();
         return escolha;
+    }
+
+    public static double lerNumero1(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Primeiro número: ");
+        double firstDouble = sc.nextDouble();
+        sc.close();
+        return firstDouble;
+        
+    }
+
+    public static double lerNumero2(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Segundo número: ");
+        double secondDouble = sc.nextDouble();
+        sc.close();
+        return secondDouble;
+        
     }
 }
