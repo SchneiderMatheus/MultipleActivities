@@ -11,7 +11,9 @@ public class Exercicio3 {
         double a = lerNumero1();
         double b = lerNumero2();
 
-        if (escolha == '1') {
+        resultado(escolha, a, b);
+
+        /*if (escolha == '1') {
             System.out.print("Soma é igual: "+somar(a, b));
         } else if (escolha == '2') {
             System.out.print("Substração é igual: "+subtrair(a, b));
@@ -22,7 +24,7 @@ public class Exercicio3 {
                 System.out.println("A divisão é igual a: "+dividir(a, b));
             } else
                 System.out.println("Divisor inválido");
-        }
+        } */
 
     }
 
@@ -51,6 +53,21 @@ public class Exercicio3 {
         double secondDouble = sc.nextDouble();
         return secondDouble;
         
+    }
+
+    public static void resultado(char escolha, double a, double b){
+        if (escolha == '1') {
+            System.out.print("Soma é igual: "+somar(a, b));
+        } else if (escolha == '2') {
+            System.out.print("Substração é igual: "+subtrair(a, b));
+        } else if (escolha == '3') {
+            System.out.println("Multiplicação é igual a: "+multiplicar(a, b));
+        } else if (escolha == '4') {
+            if (divisaoValida(b)) {
+                System.out.println("A divisão é igual a: "+dividir(a, b));
+            } else
+                System.out.println("Divisor inválido");
+        }
     }
 
     public static double somar(double a, double b){
