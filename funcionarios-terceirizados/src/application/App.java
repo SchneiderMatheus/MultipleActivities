@@ -36,6 +36,10 @@ public class App {
 			else {
 				list.add(new Employee(name, hours, valuePerHour));
 			}
+
+			for (int j = 0; j < args.length; j++) {
+				System.out.println(list);
+			}
 		}
         sc.close();
     }
