@@ -14,6 +14,10 @@ public class Templates {
         argumentos utilizados.
         ❑ Facilitar a criação de funções genéricas para vetores e matrizes.
          */
+        System.out.println(somar(3, 4));
+        System.out.println(somar(3.5, 3.5));
+
+        System.out.println(somar(3, 3.5));
 
     }
     public static int somar(int a, int b){
@@ -21,5 +25,8 @@ public class Templates {
     }
     public static double somar(double a, double b){
         return a + b;
+    }
+    public static <T extends Number> double somar(T a, T b){ // aqui podemos usar os dois
+        return a.doubleValue() + b.doubleValue();
     }
 }
