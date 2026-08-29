@@ -42,7 +42,7 @@ public class App {
             
 
         }
-        System.out.println("-----------------------------------------------");
+        System.out.println("---------------------------------------------------");
         System.out.println("Grãos: "+totalGraos);
         System.out.println("Para chegar a mil grãos são necessarias: "+casaCerta1+" casas");
         System.out.println("Para chegar a milhão grãos são necessarias: "+casaCerta2+" casas");
