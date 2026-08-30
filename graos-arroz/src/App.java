@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
-        
+        // para numeros muito grandes precisamos usar BIG INTEGER
         java.math.BigInteger totalGraos = java.math.BigInteger.ZERO;
         java.math.BigInteger graosCasa = java.math.BigInteger.ONE;
 
