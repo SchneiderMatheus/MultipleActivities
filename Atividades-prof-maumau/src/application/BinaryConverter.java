@@ -18,7 +18,9 @@ public class BinaryConverter {
   public static void main (String[] args) {  
     // keep this function call here     
     Scanner s = new Scanner(System.in);
-    System.out.print(binaryConverter(s.nextLine()));
+    System.out.println("Place your binary number: ");
+    int result = binaryConverter(s.nextLine());
+    System.out.print("\nYour result is: "+result+"\n");
     s.close(); 
   }
 }
