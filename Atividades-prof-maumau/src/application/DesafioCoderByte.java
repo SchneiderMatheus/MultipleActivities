@@ -48,5 +48,6 @@ public class DesafioCoderByte {
     // keep this function call here     
     Scanner s = new Scanner(System.in);
     System.out.print(PrimeMover(Integer.parseInt(s.nextLine()))); 
+    s.close();
   }
 }
