@@ -19,6 +19,8 @@ public class Templates {
 
         System.out.println(somar(3, 3.5));
 
+
+
     }
     public static int somar(int a, int b){
         return a + b;
@@ -28,5 +30,18 @@ public class Templates {
     }
     public static <T extends Number> double somar(T a, T b){ // aqui podemos usar os dois
         return a.doubleValue() + b.doubleValue();
+    }
+
+    public class VetorInt{
+        private int[] elementos;
+    }
+
+    public class VetorDouble{
+        private int[] elementos;
+    }
+
+    // com generics:
+    public static class Vetor<T> {
+        private T[] elementos;
     }
 }
