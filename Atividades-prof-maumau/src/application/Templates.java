@@ -32,7 +32,7 @@ public class Templates {
         return a.doubleValue() + b.doubleValue();
     }
 
-    public class VetorInt{
+    /*public class VetorInt{
         private int[] elementos;
     }
 
@@ -43,5 +43,5 @@ public class Templates {
     // com generics:
     public static class Vetor<T> {
         private T[] elementos;
-    }
+    }*/
 }
