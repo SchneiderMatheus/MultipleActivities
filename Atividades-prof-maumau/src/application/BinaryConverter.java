@@ -3,8 +3,8 @@ package application;
 import java.util.Scanner;
 
 public class BinaryConverter {
-    
-    public static int BinaryConverter(String str) {
+
+    public static int binaryConverter(String str) {
     int result = 0;
     int length = str.length();
 
@@ -18,7 +18,7 @@ public class BinaryConverter {
   public static void main (String[] args) {  
     // keep this function call here     
     Scanner s = new Scanner(System.in);
-    System.out.print(BinaryConverter(s.nextLine()));
+    System.out.print(binaryConverter(s.nextLine()));
     s.close(); 
   }
 }
