@@ -54,11 +54,23 @@ public class Templates {
         Templates com Matrizes
         O mesmo conceito pode ser utilizado com matrizes.
         Uma matriz possui duas dimensões:
+            int matriz[][]= new int[linhas][colunas];
         O template precisa representar:
         • T → tipo dos elementos
         • M → número de linhas
         • N → número de colunas
         Desta forma, declara-se:
+
+        private T[][] nomeDaMatriz;
+
+
+        ❑ Templates permitem programação genérica: uma implementação pode
+        trabalhar com diferentes tipos.
+        ❑ O compilador pode deduzir os parâmetros do template a partir dos
+        argumentos.
+        ❑ Templates podem receber tipos (typename T) e valores (size_t N).
+        ❑ Templates e sobrecarga são complementares: podem ser utilizados em
+        conjunto
          */
         System.out.println(somar(3, 4));
         System.out.println(somar(3.5, 3.5));
