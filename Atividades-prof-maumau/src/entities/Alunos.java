@@ -39,7 +39,7 @@ public class Alunos {
         this.nota2 = nota2;
     }
     public void calcularMedia(Double nota1, Double nota2){
-        this.media = (nota1 * nota2)/2;
+        this.media = (nota1 + nota2)/2;
     }
     public Double getMedia() {
         return media;
