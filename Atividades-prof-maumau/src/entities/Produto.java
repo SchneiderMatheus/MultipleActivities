@@ -45,8 +45,8 @@ public class Produto {
         this.quantidade = quantidade;
     }
     
-    public void imprimirProduto(){
-        System.out.println("Codigo: "+getCodigo()+", Nome: "+getNome()+", Preço: "+getPreço()+"Estoque do produto: "+getQuantidade());
+    public String toString(){
+        return "Codigo: "+getCodigo()+", Nome: "+getNome()+", Preço: "+getPreço()+" Estoque do produto: "+getQuantidade();
     }
     
 }
