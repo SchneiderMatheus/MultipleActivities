@@ -21,5 +21,16 @@ public class Atividade5 {
             produto[i].setCodigo(codigo);
             produto[i].setPreco(preco);
         }
+
+        System.out.println("Voce gostaria de imprmir sua lista? (y/n)");
+        char escolha = sc.next().charAt(0);
+
+        if (escolha == 'y' | escolha == 'Y') {
+            for (int i = 0; i < produto.length; i++) {
+                System.out.println("Nome: "+produto[i].getNome());
+                System.out.println("Codigo: "+produto[i].getCodigo());
+                System.out.println("Preço: "+produto[i].getPreco());
+            }
+        }
     }
 }

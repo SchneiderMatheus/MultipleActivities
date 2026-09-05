@@ -35,5 +35,4 @@ public class ProdutoAtividade5 {
         this.preco = preco;
     }
 
-    
 }
