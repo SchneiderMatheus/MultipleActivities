@@ -16,6 +16,7 @@ public class Atividade5 {
             Integer codigo = sc.nextInt();
             System.out.println("Adicione o preço do produto: "+(i+1));
             Double preco = sc.nextDouble();
+            sc.nextLine();
 
             produto[i] = new ProdutoAtividade5(codigo, nome, preco);
         }
@@ -28,6 +29,7 @@ public class Atividade5 {
                 System.out.println("Nome: "+produto[i].getNome());
                 System.out.println("Codigo: "+produto[i].getCodigo());
                 System.out.println("Preço: "+produto[i].getPreco());
+                System.out.println("--------------------------------------------------------------------------");
             }
         }
         sc.close();
