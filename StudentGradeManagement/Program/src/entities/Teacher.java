@@ -37,7 +37,7 @@ public class Teacher extends Person {
     }
     
     public void giveRaise(Double raise){
-        this.salary = salary * (raise/100);
+        this.salary += salary * (raise/100);
     }
     public String toString(){
         return "Name: " + getName()+", Age: "+getAge()+", Teacher ID: "+teacherId+", Subject: "+subject+", Salary: "+salary;
