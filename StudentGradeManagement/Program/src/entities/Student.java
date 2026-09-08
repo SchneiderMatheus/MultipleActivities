@@ -25,4 +25,7 @@ public class Student extends Person {
         this.grades = grades;
     }
     
+    public String displayInfo(){
+        return "Name: "+getName()+" Age:"+getAge();
+    }
 }
