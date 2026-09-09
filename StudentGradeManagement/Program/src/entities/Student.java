@@ -4,9 +4,10 @@ public class Student extends Person {
     private String studentId;
     private double[] grades;
 
-    public Student(String name, Integer age) {
+    public Student(String name, Integer age, String studentId) {
         super(name, age);
         this.grades = new double[5];
+        this.studentId = studentId;
     }
 
     public String getStudentId() {

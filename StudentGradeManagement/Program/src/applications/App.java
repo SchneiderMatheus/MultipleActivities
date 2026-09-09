@@ -3,6 +3,7 @@ package applications;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Student;
 import entities.Teacher;
 
 public class App {
@@ -17,6 +18,8 @@ public class App {
         double n = sc.nextDouble();
         teacher.giveRaise(n);
         System.out.println(teacher);
+        Student estudante = new Student("Matheus", 29);
+        System.out.println(estudante);
         
         sc.close();
     }
