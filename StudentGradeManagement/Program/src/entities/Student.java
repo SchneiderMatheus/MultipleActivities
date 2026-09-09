@@ -19,6 +19,7 @@ public class Student extends Person {
     }
 
     public double[] getGrades() {
+        
         return grades;
     }
 
@@ -28,5 +29,9 @@ public class Student extends Person {
     
     public String displayInfo(){
         return "Name: "+getName()+" Age:"+getAge();
+    }
+
+    public String toString(){
+        return "Name: "+getName()+", Age:"+getAge()+", Grades: "+getGrades()+ ", ID: "+getStudentId();
     }
 }
