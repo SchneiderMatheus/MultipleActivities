@@ -18,7 +18,9 @@ public class App {
         double n = sc.nextDouble();
         teacher.giveRaise(n);
         System.out.println(teacher);
-        Student estudante = new Student("Matheus", 29);
+        
+        double[] numeros = {9.0,7.5,8,7.5,3};
+        Student estudante = new Student("Matheus", 29, "123456", numeros);
         System.out.println(estudante);
         
         sc.close();
