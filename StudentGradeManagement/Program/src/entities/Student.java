@@ -18,9 +18,16 @@ public class Student extends Person {
         this.studentId = studentId;
     }
 
-    public double[] getGrades() {
-        
+    /*public double[] getGrades() {
         return grades;
+    }*/
+
+    public String getGrades() {
+        String grades1 = "";
+        for (double d : grades) {
+            grades1 = " "+d; 
+        }
+        return grades1;
     }
 
     public void setGrades(double[] grades) {
