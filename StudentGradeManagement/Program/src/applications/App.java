@@ -22,7 +22,7 @@ public class App {
         
         double[] numeros = {9.0,7.5,8,7.5,3};
         Student estudante = new Student("Matheus", 29, "123456", numeros);
-        System.out.println(estudante);
+        System.out.println(estudante.displayInfo());
         System.out.println("-----------------------------------------------------------------------");
         
         sc.close();
