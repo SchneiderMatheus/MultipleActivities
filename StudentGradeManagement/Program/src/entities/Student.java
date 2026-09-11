@@ -24,8 +24,8 @@ public class Student extends Person {
 
     public String getGrades() {
         String grades1 = "";
-        for (double d : grades) {
-            grades1 = " "+d; 
+        for (int i = 0; i < grades.length; i++) {
+            grades1 += " "+grades[i]; 
         }
         return grades1;
     }
