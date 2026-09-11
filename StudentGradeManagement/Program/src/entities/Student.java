@@ -6,7 +6,7 @@ public class Student extends Person {
 
     public Student(String name, Integer age, String studentId, double[] grades) {
         super(name, age);
-        this.grades = new double[5];
+        this.grades = grades;
         this.studentId = studentId;
     }
 
@@ -35,7 +35,7 @@ public class Student extends Person {
     }
     
     public String displayInfo(){
-        return "Name: "+getName()+" Age:"+getAge();
+        return "Name: "+getName()+" Age:"+getAge()+", Grades: "+getGrades()+ ", ID: "+getStudentId();
     }
 
     public String toString(){
