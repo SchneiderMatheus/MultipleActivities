@@ -3,6 +3,7 @@ package applications;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Person;
 import entities.Student;
 import entities.Teacher;
 
@@ -25,6 +26,9 @@ public class App {
         System.out.println(estudante.displayInfo());
         System.out.println("-----------------------------------------------------------------------");
         
+        Person pessoa = new Person("Maria", 24);
+        System.out.println(pessoa);
+
         sc.close();
     }
 }
