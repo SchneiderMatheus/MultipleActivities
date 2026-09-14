@@ -27,7 +27,7 @@ public class App {
         System.out.println("-----------------------------------------------------------------------");
         
         Person pessoa = new Person("Maria", 24);
-        System.out.println(pessoa);
+        System.out.println(pessoa.displayInfo());
 
         sc.close();
     }
