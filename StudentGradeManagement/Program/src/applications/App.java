@@ -22,9 +22,19 @@ public class App {
         System.out.println("-----------------------------------------------------------------------");
         
         double[] numeros = {9.0,7.5,8,7.5,3};
-        Student estudante = new Student("Matheus", 29, "123456", numeros);
-        System.out.println(estudante.displayInfo());
+        Student estudante1 = new Student("Matheus", 29, "123456", numeros);
+        System.out.println(estudante1.displayInfo());
         System.out.println("-----------------------------------------------------------------------");
+
+        System.out.println("Digita as informçãoes do aluno 2: ");
+        System.out.print("nome: ");
+        String nome2 = sc.nextLine();
+        System.out.print("Idade: ");
+        int age2 = sc.nextInt();
+        String id2 = sc.nextLine();
+        
+
+        Student estudante2 = new Student(null, null, null, numeros);
         
         Person pessoa = new Person("Maria", 24);
         System.out.println(pessoa.displayInfo());
