@@ -25,16 +25,26 @@ public class App {
         Student estudante1 = new Student("Matheus", 29, "123456", numeros);
         System.out.println(estudante1.displayInfo());
         System.out.println("-----------------------------------------------------------------------");
-
+        sc.next();
         System.out.println("Digita as informçãoes do aluno 2: ");
         System.out.print("nome: ");
         String nome2 = sc.nextLine();
         System.out.print("Idade: ");
         int age2 = sc.nextInt();
+        System.out.print("ID: ");
         String id2 = sc.nextLine();
+        sc.next();
+        System.out.println("Notas: ");
+        double [] numeros2 = new double[5];
+        for (int i = 0; i < numeros2.length; i++) {
+            System.out.println("Nota "+(i+1)+": ");
+            double digitados = sc.nextDouble();
+            numeros2[i] = digitados;
+        }
         
 
-        Student estudante2 = new Student(null, null, null, numeros);
+        Student estudante2 = new Student(nome2, age2, id2, numeros2);
+        System.out.println(estudante2.displayInfo());
         
         Person pessoa = new Person("Maria", 24);
         System.out.println(pessoa.displayInfo());
