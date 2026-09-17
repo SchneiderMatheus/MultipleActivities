@@ -21,12 +21,12 @@ public class EntenderForEach {
 
         int[] inteiros = {7, 14, 21, 28, 35};
         int contador = 0;
-         for (int i : inteiros){
+        for (int i : inteiros){
             contador ++;
-         }
-         System.out.println("Contador: "+contador);
-         System.out.println("________________________________________________________________\n");
-         
+        }
+        System.out.println("Contador: "+contador);
+        System.out.println("________________________________________________________________\n");
+        int[] inteiros2 = {2, 4, 6, 8};
         
     }
 }
