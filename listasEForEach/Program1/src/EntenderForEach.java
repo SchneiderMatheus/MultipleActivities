@@ -27,6 +27,8 @@ public class EntenderForEach {
         System.out.println("Contador: "+contador);
         System.out.println("________________________________________________________________\n");
         int[] inteiros2 = {2, 4, 6, 8};
-        
+        for (int i: inteiros2){
+            System.out.println(i*2);
+        }
     }
 }
