@@ -25,10 +25,17 @@ public class EntenderForEach {
             contador ++;
         }
         System.out.println("Contador: "+contador);
-        System.out.println("________________________________________________________________\n");
+        System.out.println("_________________________________________________________________________\n");
         int[] inteiros2 = {2, 4, 6, 8};
         for (int i: inteiros2){
             System.out.println(i*2);
         }
+        System.out.println("_________________________________________________________________________\n");
+        double[] inteiros3 = {4.99, 12.50, 3.75, 8.00};
+        double total = 0;
+        for (double i : inteiros3) {
+            total += i;
+        }
+        System.out.println(total);
     }
 }
