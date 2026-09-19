@@ -50,10 +50,8 @@ public class EntenderForEach {
         int[] inteiros5 ={9, 4, 15, 2, 7};
         int small=100;
         for (int i : inteiros5) {
-            if (i>0) {
-                if (i<(inteiros5[i-1])) {
-            small = inteiros5[i];
-                }
+            if (i < small) {
+                small = i;
             }
             
         }
