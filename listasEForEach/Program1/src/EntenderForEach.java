@@ -37,5 +37,14 @@ public class EntenderForEach {
             total += i;
         }
         System.out.println(total);
+        System.out.println("_________________________________________________________________________\n");
+        int[] inteiros4 ={3, 8, 12, 7, 20, 15, 4};
+        int contador2 = 0;
+        for (int i : inteiros4) {
+            if (i%2==0) {
+                contador2++;
+            }
+        }
+        System.out.println("São "+contador2+" números pares");
     }
 }
