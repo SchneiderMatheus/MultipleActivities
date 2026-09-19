@@ -46,5 +46,14 @@ public class EntenderForEach {
             }
         }
         System.out.println("São "+contador2+" números pares");
+        System.out.println("_________________________________________________________________________\n");
+        int[] inteiros5 ={9, 4, 15, 2, 7};
+        int small=100;
+        for (int i : inteiros5) {
+            if (i<(i-1)) {
+            small = i;
+            }
+        }
+        System.out.println(small);
     }
 }
