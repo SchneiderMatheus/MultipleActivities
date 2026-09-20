@@ -56,5 +56,6 @@ public class EntenderForEach {
             
         }
         System.out.println(small);
+        System.out.println("_________________________________________________________________________\n");
     }
 }
