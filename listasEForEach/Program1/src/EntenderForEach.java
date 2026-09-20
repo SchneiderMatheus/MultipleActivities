@@ -63,5 +63,11 @@ public class EntenderForEach {
             total2 += i;
         }
         System.out.println(total2);
+        System.out.println("_________________________________________________________________________\n");
+        String[] string1 = {"java", "loop", "code"};
+        for (String i : string1) {
+            System.out.println(i);
+            System.out.println(i.length());
+        }
     }
 }
