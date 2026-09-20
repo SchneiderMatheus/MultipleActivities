@@ -57,5 +57,11 @@ public class EntenderForEach {
         }
         System.out.println(small);
         System.out.println("_________________________________________________________________________\n");
+        int[] inteiros6 ={88, 92, 75, 60, 100};
+        int total2 = 0;
+        for (int i : inteiros6) {
+            total2 += i;
+        }
+        System.out.println(total2);
     }
 }
