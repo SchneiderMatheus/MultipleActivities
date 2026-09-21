@@ -69,5 +69,17 @@ public class EntenderForEach {
             System.out.println(i);
             System.out.println(i.length());
         }
+        System.out.println("_________________________________________________________________________\n");
+        String [] string2 = {"apple", "sky", "orange"};
+        int contador3 = 0;
+        for (String i : string2) {
+            for (int j = 0; j < string2.length; j++) {
+                char currentChar = i.charAt(j);
+                if (currentChar == 'a' || currentChar == 'e' || currentChar =='i' || currentChar == 'o' || currentChar == 'u'){
+                    contador3++;
+                }
+            }
+        }
+        System.out.println("Número de vogais é: "+contador3);
     }
 }
