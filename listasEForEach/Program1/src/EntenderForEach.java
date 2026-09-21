@@ -73,7 +73,7 @@ public class EntenderForEach {
         String [] string2 = {"apple", "sky", "orange"};
         int contador3 = 0;
         for (String i : string2) {
-            for (int j = 0; j < string2.length; j++) {
+            for (int j = 0; j < i.length(); j++) {
                 char currentChar = i.charAt(j);
                 if (currentChar == 'a' || currentChar == 'e' || currentChar =='i' || currentChar == 'o' || currentChar == 'u'){
                     contador3++;
