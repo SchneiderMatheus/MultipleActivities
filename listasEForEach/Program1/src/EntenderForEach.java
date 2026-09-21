@@ -97,5 +97,13 @@ public class EntenderForEach {
             }
             System.out.println(reverse);
         }
+        System.out.println("_________________________________________________________________________\n");
+        int[] act12 = {12, 5, 8, 20, 3, 17, 30};
+        for (int i : act12) {
+            if (i>10) {
+                System.out.println(i);
+            }
+        }
+        System.out.println("_________________________________________________________________________\n");
     }
 }
