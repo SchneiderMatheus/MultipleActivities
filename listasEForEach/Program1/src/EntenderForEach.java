@@ -90,9 +90,9 @@ public class EntenderForEach {
         System.out.println(resultado);
         System.out.println("_________________________________________________________________________\n");
         String[] string11 = {"cat", "dog", "sun"};
-        String reverse="";
         for (String i : string11) {
-            for (int j = i.length(); j >= i.length(); j--) {
+            String reverse="";
+            for (int j = i.length()-1; j >= 0; j--) {
                 reverse += i.charAt(j);
             }
             System.out.println(reverse);
