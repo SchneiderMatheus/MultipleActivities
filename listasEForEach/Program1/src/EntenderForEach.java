@@ -81,5 +81,12 @@ public class EntenderForEach {
             }
         }
         System.out.println("Número de vogais é: "+contador3);
+        System.out.println("_________________________________________________________________________\n");
+        String [] string10 = {"I", "love", "for-each", "loops"};
+        String resultado="";
+        for (String i : string10) {
+            resultado += i + " "; 
+        }
+        System.out.println(resultado);
     }
 }
