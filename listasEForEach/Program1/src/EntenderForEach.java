@@ -118,7 +118,16 @@ public class EntenderForEach {
         System.out.println(contadorAct13);
         System.out.println("_________________________________________________________________________\n");
         String[] act14 = {"pen", "book", "ruler", "eraser"};
+        boolean found = false;
         System.out.println("Which word should i look for?");
         String x = sc.nextLine();
+        for (String i : act14) {
+            if (x==i) {
+                found = true;
+            }
+        }
+        if (found) {
+            System.out.println("Found it!");
+        }
     }
 }
