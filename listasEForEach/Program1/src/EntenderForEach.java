@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class EntenderForEach {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         String[] fruits = {"apple", "banana", "cherry"};
 
         for (int i = 0; i < fruits.length; i++) {
@@ -113,5 +116,9 @@ public class EntenderForEach {
             }
         }
         System.out.println(contadorAct13);
+        System.out.println("_________________________________________________________________________\n");
+        String[] act14 = {"pen", "book", "ruler", "eraser"};
+        System.out.println("Which word should i look for?");
+        String x = sc.nextLine();
     }
 }
