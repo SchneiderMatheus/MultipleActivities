@@ -105,5 +105,13 @@ public class EntenderForEach {
             }
         }
         System.out.println("_________________________________________________________________________\n");
+        double[] act13 = {55, 72, 90, 48, 65, 88};
+        int contadorAct13 = 0;
+        for (double i : act13) {
+            if (i>=60) {
+                contadorAct13++;
+            }
+        }
+        System.out.println(contadorAct13);
     }
 }
