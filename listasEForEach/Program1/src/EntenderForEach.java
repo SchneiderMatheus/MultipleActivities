@@ -138,5 +138,13 @@ public class EntenderForEach {
                 }
         }
         System.out.println(found15);
+        System.out.println("_________________________________________________________________________\n");
+        String [] act16 = {"hello", "world", "java"};
+        int contador16 = 0;
+        for (String i : act16) {
+            for (String j : act16) {
+                contador16++;
+            }
+        }
     }
 }
