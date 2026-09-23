@@ -122,7 +122,7 @@ public class EntenderForEach {
         System.out.println("Which word should i look for?");
         String x = sc.nextLine();
         for (String i : act14) {
-            if (x==i) {
+            if (x.equals(i)) {
                 found = true;
             }
         }
