@@ -142,9 +142,10 @@ public class EntenderForEach {
         String [] act16 = {"hello", "world", "java"};
         int contador16 = 0;
         for (String i : act16) {
-            for (String j : act16) {
+            for (int j = 0; j < i.length(); j++) {
                 contador16++;
             }
         }
+        System.out.println(contador16);
     }
 }
