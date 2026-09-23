@@ -129,5 +129,11 @@ public class EntenderForEach {
         if (found) {
             System.out.println("Found it!");
         }
+        System.out.println("_________________________________________________________________________\n");
+        String [] act15 = {"hi", "banana", "cat", "watermelon", "dog"};
+        String found15 = "";
+        for (String i : act15) {
+            
+        }
     }
 }
