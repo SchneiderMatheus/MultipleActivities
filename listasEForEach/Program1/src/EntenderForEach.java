@@ -133,7 +133,12 @@ public class EntenderForEach {
         String [] act15 = {"hi", "banana", "cat", "watermelon", "dog"};
         String found15 = "";
         for (String i : act15) {
-            
+            for (int j = 0; j < i.length(); j++) {
+                if (i.length()>found15.length()) {
+                    found15 = i;
+                }
+            }
         }
+        System.out.println(found15);
     }
 }
