@@ -147,5 +147,13 @@ public class EntenderForEach {
             }
         }
         System.out.println(contador16);
+        System.out.println("_________________________________________________________________________\n");
+        String[] act17 ={"a", "b", "c"};
+        int index = 0;
+        for (String i : act17) {
+            System.out.println("index: "+index+" item: "+i);
+            index++;
+        }
+        
     }
 }
