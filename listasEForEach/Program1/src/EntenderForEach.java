@@ -154,6 +154,10 @@ public class EntenderForEach {
             System.out.println("index: "+index+" item: "+i);
             index++;
         }
-        
+        System.out.println("_________________________________________________________________________\n");
+        int[] act18 = {1, 2, 2, 3, 1, 4, 5, 5};
+        for (int i : act18) {
+            System.out.println(i);
+        }
     }
 }
