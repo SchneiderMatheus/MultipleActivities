@@ -156,8 +156,12 @@ public class EntenderForEach {
         }
         System.out.println("_________________________________________________________________________\n");
         int[] act18 = {1, 2, 2, 3, 1, 4, 5, 5};
+        String visto = ",";
         for (int i : act18) {
-            System.out.println(i);
+            if (!visto.contains(","+ i + ",")) {
+                System.out.println(i);
+                visto += i +",";
+            }
         }
     }
 }
