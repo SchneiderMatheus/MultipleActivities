@@ -163,5 +163,10 @@ public class EntenderForEach {
                 visto += i +",";
             }
         }
+        System.out.println("_________________________________________________________________________\n");
+        int[] act19 = {10, 20, 30, 40, 50};
+        for (int i : act19) {
+            
+        }
     }
 }
