@@ -174,5 +174,11 @@ public class EntenderForEach {
             System.out.println(i);
         }
         System.out.println("_________________________________________________________________________\n");
+        double [] act20 = {19.99, 5.50, 12.00, 3.25};
+        double soma = 0;
+        for (double d : act20) {
+            soma += d;
+        }
+        System.out.println(soma*0.1);
     }
 }
