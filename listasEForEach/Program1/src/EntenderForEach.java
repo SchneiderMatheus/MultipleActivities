@@ -179,6 +179,6 @@ public class EntenderForEach {
         for (double d : act20) {
             soma += d;
         }
-        System.out.println(soma*0.1);
+        System.out.println((soma*0.1)+soma);
     }
 }
