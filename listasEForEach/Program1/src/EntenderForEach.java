@@ -167,9 +167,8 @@ public class EntenderForEach {
         int[] act19 = {10, 20, 30, 40, 50};
         int[] actS19 = new int[5];
         for (int i = 4; i >= 0; i--) {
-            for (int j = 0; j < actS19.length; j++) {
-                actS19[i] = j;
-            }
+            actS19[4-i] = act19[i];
+            
         }
         for (int i : actS19) {
             System.out.println(i);
