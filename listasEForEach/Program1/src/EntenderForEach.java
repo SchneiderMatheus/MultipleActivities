@@ -24,9 +24,12 @@ public class EntenderForEach {
 
         int[] inteiros = {7, 14, 21, 28, 35};
         int contador = 0;
+        String numeros = "";
         for (int i : inteiros){
+            numeros += i + ", ";
             contador ++;
         }
+        System.out.println(numeros);
         System.out.println("Contador: "+contador);
         System.out.println("_________________________________________________________________________\n");
         int[] inteiros2 = {2, 4, 6, 8};
@@ -180,5 +183,6 @@ public class EntenderForEach {
             soma += d;
         }
         System.out.println((soma*0.1)+soma);
+        sc.close();
     }
 }
