@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "array_lista",
+            "request": "launch",
+            "mainClass": "array_lista",
+            "projectName": "MultipleActivities_9e333826"
+        },
+        {
+            "type": "java",
             "name": "EntenderForEach",
             "request": "launch",
             "mainClass": "EntenderForEach",
