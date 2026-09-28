@@ -39,8 +39,9 @@ public class list {
         for (String string : result) {
             System.out.println(string);
         }
-
-
+        System.out.println("________________________________________________________________________________________________");
+        String name = list.stream().filter(x ->x.charAt(0)=='S').findFirst().orElse(null);
+        System.out.println(name);
         sc.close();
     }
 }
