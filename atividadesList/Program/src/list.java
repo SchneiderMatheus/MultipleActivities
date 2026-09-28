@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class list {
     public static void main(String[] args) {
@@ -29,6 +30,17 @@ public class list {
         System.out.println("________________________________________________________________________________________________");
         list.add("Luiz");
         System.out.println("Index of Silvana: " + list.indexOf("Silvana"));
+        System.out.println("________________________________________________________________________________________________");
+        list.add("Silvio");
+        list.add("Savio");
+
+        List<String> result = list.stream().filter(x ->x.charAt(0)=='S').toList();
+
+        for (String string : result) {
+            System.out.println(string);
+        }
+
+
         sc.close();
     }
 }
