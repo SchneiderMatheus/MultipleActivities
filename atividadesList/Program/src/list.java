@@ -11,15 +11,20 @@ public class list {
         list.add("Matheus");
         list.add("João");
         list.add("Silvana");
-
         list.add(2,"Marco");
-
         System.out.println(list.size());
+        System.out.println("________________________________________________________________________________________________");
 
         for (String string : list) {
             System.out.println(string);
         }
+        System.out.println("________________________________________________________________________________________________");
 
+        list.remove("João");
+
+        for (String string : list) {
+            System.out.println(string);
+        }
         sc.close();
     }
 }
