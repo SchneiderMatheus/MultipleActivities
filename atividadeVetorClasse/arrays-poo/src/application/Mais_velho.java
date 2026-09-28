@@ -21,6 +21,16 @@ public class Mais_velho {
 
             vect[i] = new Mais_Velho(nome, idade);
         }
+        int older = 0;
+        int indexPessoa=5;
+        for (int i = 0; i < vect.length; i++) {
+            if (vect[i].getAge() > older) {
+                older = vect[i].getAge();
+                indexPessoa = i;
+
+            }
+        }
+        System.out.println("Mais velho é "+vect[indexPessoa]);
 
         sc.close();
     }
