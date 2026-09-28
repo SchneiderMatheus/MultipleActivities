@@ -12,6 +12,14 @@ public class list {
         list.add("João");
         list.add("Silvana");
 
+        list.add(2,"Marco");
+
+        System.out.println(list.size());
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+
         sc.close();
     }
 }

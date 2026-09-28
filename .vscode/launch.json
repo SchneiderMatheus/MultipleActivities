@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "list",
+            "request": "launch",
+            "mainClass": "list",
+            "projectName": "MultipleActivities_9e333826"
+        },
+        {
+            "type": "java",
             "name": "Mais_velho",
             "request": "launch",
             "mainClass": "application.Mais_velho",
