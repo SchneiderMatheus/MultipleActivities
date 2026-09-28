@@ -7,5 +7,6 @@ public class array_lista {
         for (int i : vect) {
             System.out.print(i+",");
         }
+        System.out.println("done");
     }
 }
