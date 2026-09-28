@@ -26,6 +26,6 @@ public class Mais_Velho {
     }
 
     public String toString(){
-        return "Nome: "+name+", Idade: "+ age;
+        return " "+name+", Idade: "+ age;
     }
 }
