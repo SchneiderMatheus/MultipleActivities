@@ -40,7 +40,7 @@ public class Employee {
     }
 
     public String toString() {
-        return "Employee [name=" + name + ", getValuePerHour()=" + getValuePerHour() + "]";
+        return "Funcionário [Nome=" + name + ", Pagamento =" + payment() + "]";
     }
 
     
