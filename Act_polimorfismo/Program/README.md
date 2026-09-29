@@ -1,0 +1,1 @@
+Upcasting and Downcasting tests, heritage was also applied on these activities
