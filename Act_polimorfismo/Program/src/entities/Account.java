@@ -37,7 +37,7 @@ public class Account {
     public void deposit(Double amount) {
         balance += amount;
     }
-    public void wihtdraw(Double amount) {
+    public void withdraw(Double amount) {
         balance -= amount + 5.0;
     }
 
