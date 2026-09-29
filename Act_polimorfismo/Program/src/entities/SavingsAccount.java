@@ -20,7 +20,7 @@ public class SavingsAccount extends Account {
     }
 
     @Override
-    public final void wihtdraw(Double amount) {
+    public final void withdraw(Double amount) {
         balance -= amount;
     }
     public String toString(){

@@ -10,8 +10,8 @@ public class App {
         Scanner sc = new Scanner(System.in);
         Account x = new Account(1020, "Alex", 1000.0);
         Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
-        x.wihtdraw(50.0);
-        y.wihtdraw(50.0);
+        x.withdraw(50.0);
+        y.withdraw(50.0);
         System.out.println(x);
         System.out.println(y);
 
