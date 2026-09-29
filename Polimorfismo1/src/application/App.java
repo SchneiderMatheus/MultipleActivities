@@ -12,12 +12,12 @@ public class App {
         Employee[] list1 = new Employee[n];
 
         for (int i = 0; i<list1.length;i++) {
-            System.out.print("Digite o nome do funcionario: ");
+            System.out.print("Digite o nome do funcionário: ");
             String name = sc.nextLine();
             System.out.print("Digite as horas trabalhadas: ");
             int hour = sc.nextInt();
             sc.nextLine();
-            System.out.print("Digite a valor da hora tbralahada do funcionario: ");
+            System.out.print("Digite a valor da hora trabalhada do funcionário: ");
             double valuePerHour = sc.nextDouble();
             sc.nextLine();
 
