@@ -34,6 +34,7 @@ public class App {
             list1[i] = new Employee(name, hour, valuePerHour);
 
         }
+        System.out.println("\nPAYMENTS: ");
 
         for (Employee employee : list1) {
             System.out.println(employee);
