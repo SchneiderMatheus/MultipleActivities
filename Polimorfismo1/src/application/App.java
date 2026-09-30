@@ -12,8 +12,8 @@ public class App {
         sc.nextLine();
         Employee[] list1 = new Employee[n];
 
-        for (int i = 1; i<=list1.length;i++) {
-            System.out.println("Employee #"+i+" data: ");
+        for (int i = 0; i<list1.length;i++) {
+            System.out.println("Employee #"+(i+1)+" data: ");
             System.out.print("Outsourced (y/n)? ");
             char escolha = sc.next().charAt(0);
             System.out.print("Name: ");
