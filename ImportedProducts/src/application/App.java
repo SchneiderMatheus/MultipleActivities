@@ -23,21 +23,15 @@ public class App {
             System.out.println("Common, used or imported (c/u/i)?");
             char escolha = sc.next().charAt(0);
             sc.nextLine();
+            System.out.print("Name:");
+            String name = sc.nextLine();
+            System.out.print("Price:");
+            double price = sc.nextDouble();
+            sc.nextLine();
 
             if (escolha == 'c') {
-                System.out.print("Name:");
-                String name = sc.nextLine();
-                System.out.print("Price:");
-                double price = sc.nextDouble();
-                sc.nextLine();
-
                 products[i] = new Product(name, price);
             } else if (escolha == 'u') {
-                System.out.print("Name:");
-                String name = sc.nextLine();
-                System.out.print("Price:");
-                double price = sc.nextDouble();
-                sc.nextLine();
                 System.out.print("Manufacture date (DD/MM/YYYY):");
                 DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                 String entrada = sc.nextLine();
@@ -45,11 +39,6 @@ public class App {
 
                 products[i] = new UsedProduct(name, price, date);
             } else {
-                System.out.print("Name:");
-                String name = sc.nextLine();
-                System.out.print("Price:");
-                double price = sc.nextDouble();
-                sc.nextLine();
                 System.out.print("Custom Fee:");
                 double customsFee = sc.nextDouble();
                 sc.nextLine();
