@@ -15,7 +15,7 @@ public class Program {
 
         List <Shape> list = new ArrayList<>();
 
-        System.out.print("Enter the numbe rof Shapes: ");
+        System.out.print("Enter the numbe of Shapes: ");
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
@@ -32,7 +32,7 @@ public class Program {
 
                 list.add(new Rectangle(color, width, height));
             } else {
-                System.out.println("Radius:");
+                System.out.print("Radius:");
                 double radius = sc.nextDouble();
 
                 list.add(new Circle(color, radius));
@@ -40,8 +40,9 @@ public class Program {
         }
 
         for (Shape shape : list) {
-            System.out.println(shape);
+            System.out.println(shape.area());
         }
+
 
         sc.close();
     }
