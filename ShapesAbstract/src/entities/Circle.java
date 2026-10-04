@@ -1,5 +1,6 @@
 package entities;
 
 public class Circle {
-
+    private Double radius;
+    
 }
