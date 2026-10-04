@@ -1,6 +1,6 @@
 package entities;
 
-public class Shape {
+public abstract class Shape {
     private Color color;
 
     public Shape(Color color) {
@@ -15,7 +15,5 @@ public class Shape {
         this.color = color;
     }
 
-    public Double area(){
-        
-    }
+    public abstract double area();
 }
