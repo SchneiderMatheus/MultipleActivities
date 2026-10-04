@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import entities.Circle;
 import entities.Color;
+import entities.Rectangle;
 import entities.Shape;
 
 public class Program {
@@ -16,7 +18,7 @@ public class Program {
         System.out.print("Enter the numbe rof Shapes: ");
         int n = sc.nextInt();
 
-        for (int i = 1; i <= args.length; i++) {
+        for (int i = 1; i <= n; i++) {
             System.out.println("Shape #"+i+" data: ");
             System.out.print("Rectangle or Circle (r/c)?");
             char whichShape = sc.next().charAt(0);
@@ -28,10 +30,17 @@ public class Program {
                 System.out.print("height: ");
                 double height = sc.nextDouble();
 
-
+                list.add(new Rectangle(color, width, height));
             } else {
+                System.out.println("Radius:");
+                double radius = sc.nextDouble();
 
+                list.add(new Circle(color, radius));
             }
+        }
+
+        for (Shape shape : list) {
+            System.out.println(shape);
         }
 
         sc.close();
