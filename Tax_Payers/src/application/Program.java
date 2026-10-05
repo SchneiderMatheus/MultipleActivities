@@ -20,6 +20,7 @@ public class Program {
             System.out.printf("Tax payer %d data:\n",i);
             System.out.print("Individual or company (i/c)?");
             char choice = sc.next().charAt(0);
+            sc.nextLine();
             System.out.print("Name: ");
             String name = sc.nextLine();
             System.out.print("Anual income: ");
@@ -35,16 +36,16 @@ public class Program {
                 list.add(new Company(name, anualIncome, numberOfEmployees));
             }
 
-            System.out.println("TAXES PAID: ");
-            double sum = 0;
-
-            for (TaxPayer taxPayer : list) {
-                System.out.println("$ "+taxPayer.tax());
-                sum += taxPayer.tax();
-            }
-            System.out.println("TOTAL TAXES: $ "+sum);
-
         }
+        System.out.println("TAXES PAID: ");
+        double sum = 0;
+
+        for (TaxPayer taxPayer : list) {
+            System.out.println("$ "+taxPayer.tax());
+            sum += taxPayer.tax();
+        }
+
+        System.out.println("TOTAL TAXES: $ "+sum);
 
         sc.close();
     }
