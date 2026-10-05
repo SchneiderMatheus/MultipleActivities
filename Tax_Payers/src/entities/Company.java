@@ -11,8 +11,11 @@ public class Company extends TaxPayer {
     
     @Override
     public Double tax() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'tax'");
+        if (numberOfEmployees>10) {
+            return getAnualIncome()*0.14;
+        } else {
+            return getAnualIncome()*0.16;
+        }
     }
 
 
