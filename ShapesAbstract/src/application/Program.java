@@ -40,7 +40,7 @@ public class Program {
         }
 
         for (Shape shape : list) {
-            System.out.println(shape.area());
+            System.out.printf("Area: %.2f, Cor: %s \n",shape.area(),shape.getColor());
         }
 
 
