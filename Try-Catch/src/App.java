@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App {
@@ -10,6 +11,9 @@ public class App {
         } 
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Invalid Position");
+        }
+         catch (InputMismatchException e) {
+            System.out.println("Invalid input");
         }
 
         System.out.println("Ending Program");
