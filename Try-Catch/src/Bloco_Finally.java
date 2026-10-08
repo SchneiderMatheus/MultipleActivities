@@ -17,6 +17,7 @@ public class Bloco_Finally {
             if (sc != null) {
                 sc.close();
             }
+            System.out.println("Finally Block Executed");
         }
     }
 }
