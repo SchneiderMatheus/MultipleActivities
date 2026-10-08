@@ -23,6 +23,8 @@ public class App {
         } 
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Invalid Position");
+            e.printStackTrace();
+            sc.next();
         }
          catch (InputMismatchException e) {
             System.out.println("Invalid input");
