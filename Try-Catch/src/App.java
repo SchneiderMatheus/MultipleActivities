@@ -3,11 +3,18 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        method1();
+        System.out.println("Ending Program...");
+    }
+
+    public static void method1(){
+        System.out.println("***Method1 Start***");
         method2();
+        System.out.println("***Method1 Ended***");
     }
 
     public static void method2(){
-        System.out.println("Method2 Start");
+        System.out.println("***Method2 Start***");
         Scanner sc = new Scanner(System.in);
         try {
             String[] vect = sc.nextLine().split(" ");
@@ -20,6 +27,7 @@ public class App {
          catch (InputMismatchException e) {
             System.out.println("Invalid input");
         }
+        System.out.println("***Method2 Ended***");
         sc.close();
     }
 }
