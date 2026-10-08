@@ -3,6 +3,11 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        method2();
+    }
+
+    public static void method2(){
+        System.out.println("Method2 Start");
         Scanner sc = new Scanner(System.in);
         try {
             String[] vect = sc.nextLine().split(" ");
@@ -15,9 +20,6 @@ public class App {
          catch (InputMismatchException e) {
             System.out.println("Invalid input");
         }
-
-        System.out.println("Ending Program");
-
         sc.close();
     }
 }
