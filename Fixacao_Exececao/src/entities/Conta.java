@@ -45,6 +45,18 @@ public class Conta {
         this.withdrawLimit = withdrawLimit;
     }
 
-    
+    public void deposit(Double amount){
+        this.balance += amount;
+    }
+
+    public void withdraw(Double amount){
+        this.balance -= amount;
+    }
+
+    public String toString() {
+        return "Conta [number=" + number + ", holder=" + holder + ", balance=" + balance + ", withdrawLimit="
+                + withdrawLimit + "]";
+    }
+
 
 }
