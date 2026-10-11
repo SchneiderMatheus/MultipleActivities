@@ -47,7 +47,7 @@ public class Reservation {
 
     @Override
     public String toString() {
-        return "Reservation [roomNumber=" + roomNumber + ", checkIn=" + sdf.format(checkIn) + ", checkOut=" + sdf.format(checkOut) + "]";
+        return "Reservation [roomNumber=" + roomNumber + ", checkIn=" + sdf.format(checkIn) + ", checkOut=" + sdf.format(checkOut) + ", nights= "+duration()+"]";
     }
 
 }
