@@ -1,6 +1,7 @@
 package entities;
 
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class Reservation {
     private Integer roomNumber;
@@ -25,17 +26,15 @@ public class Reservation {
         return checkIn;
     }
 
-    public void setCheckIn(Date checkIn) {
-        this.checkIn = checkIn;
-    }
 
     public Date getCheckOut() {
         return checkOut;
     }
-
-    public void setCheckOut(Date checkOut) {
-        this.checkOut = checkOut;
-    }
     
+    public long duration(){
+        long diff = checkOut.getTime() - checkIn.getTime();
+        TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+        return diff;
+    }
     
 }
