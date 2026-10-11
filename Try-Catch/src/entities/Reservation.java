@@ -37,4 +37,14 @@ public class Reservation {
         return diff;
     }
     
+    public void updateDates(Date checkIn, Date checkOut){
+        this.checkIn = checkIn;
+        this.checkOut = checkOut;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation [roomNumber=" + roomNumber + ", checkIn=" + checkIn + ", checkOut=" + checkOut + "]";
+    }
+
 }
