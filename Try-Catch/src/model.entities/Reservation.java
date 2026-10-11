@@ -1,8 +1,10 @@
-package entities;
+package model.entites;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import model.entities.DomainException;
 
 public class Reservation {
     private Integer roomNumber;
