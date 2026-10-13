@@ -1,7 +1,7 @@
-package model.exception;
+package model.exceptions;
 
 public class DomainExeception extends Exception {
-    public DomainException(String msg){
+    public void DomainException(String msg){
         super(msg);
     }
 }

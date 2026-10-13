@@ -4,7 +4,7 @@ import java.util.Scanner;
 import model.entities.Conta;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         try {
             System.out.println("Enter account data: ");
@@ -20,11 +20,12 @@ public class App {
 
             System.out.print("\nEnter amount for withdraw: ");
             double withdraw = sc.nextDouble();
+            acc.withdraw(withdraw);
             System.out.print("New balance: ");
             acc.getBalance();
             
-        } catch (Exception e) {
-            
+        } catch (DomainException e) {
+            System.out.println("Error: "+e.getMessage());
         }
         sc.close();
     }
