@@ -42,6 +42,9 @@ public class Conta {
     }
 
     public void withdraw(Double amount){
+        if (amount > balance || amount > withdrawLimit) {
+            throw new DomainException("Error: not enough balance or withdrawLimit");
+        } else
         this.balance -= amount;
     }
 
