@@ -37,14 +37,6 @@ public class Conta {
         this.balance = balance;
     }
 
-    public Double getWithdrawLimit() {
-        return withdrawLimit;
-    }
-
-    public void setWithdrawLimit(Double withdrawLimit) {
-        this.withdrawLimit = withdrawLimit;
-    }
-
     public void deposit(Double amount){
         this.balance += amount;
     }
