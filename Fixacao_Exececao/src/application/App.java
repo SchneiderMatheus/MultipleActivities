@@ -1,8 +1,7 @@
-
-import java.text.ParseException;
+package application;
 import java.util.Scanner;
-
 import entities.Conta;
+import entities.DomainException;
 
 public class App {
     public static void main(String[] args) {
@@ -27,9 +26,7 @@ public class App {
             
         } catch (DomainException e) {
             System.out.println("Error: "+e.getMessage());
-        } catch (ParseException e){
-            System.out.println("Error");
-        }
+        } 
         sc.close();
     }
 }
