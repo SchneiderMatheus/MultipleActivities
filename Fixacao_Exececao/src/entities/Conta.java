@@ -7,6 +7,11 @@ public class Conta {
     private Double withdrawLimit;
     
     public Conta(Integer number, String holder, Double balance, Double withdrawLimit) {
+        if (balance<0) {
+            throw new DomainException("Your balance cannot be negative");
+        } else if (withdrawLimit<100) {
+            throw new DomainException("Withdraw has to be at least $100");
+        }
         this.number = number;
         this.holder = holder;
         this.balance = balance;
