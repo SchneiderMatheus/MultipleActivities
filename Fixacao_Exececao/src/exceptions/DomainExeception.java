@@ -1,4 +1,4 @@
-package model.exceptions;
+package exceptions;
 
 public class DomainExeception extends Exception {
     public void DomainException(String msg){

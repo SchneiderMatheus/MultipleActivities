@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-import model.entities.Conta;
+import entities.Conta;
 
 public class App {
     public static void main(String[] args) {
