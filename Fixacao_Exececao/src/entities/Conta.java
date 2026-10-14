@@ -41,7 +41,7 @@ public class Conta {
         this.balance += amount;
     }
 
-    public void withdraw(Double amount) throws DomainException{
+    public void withdraw(Double amount) {
         if (amount > balance || amount > withdrawLimit) {
             throw new DomainException("Error: not enough balance or withdrawLimit");
         } else
