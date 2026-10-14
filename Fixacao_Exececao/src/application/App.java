@@ -1,4 +1,5 @@
 
+import java.text.ParseException;
 import java.util.Scanner;
 
 import entities.Conta;
@@ -26,6 +27,8 @@ public class App {
             
         } catch (DomainException e) {
             System.out.println("Error: "+e.getMessage());
+        } catch (ParseException e){
+            System.out.println("Error");
         }
         sc.close();
     }
