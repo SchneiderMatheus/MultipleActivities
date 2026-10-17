@@ -9,6 +9,11 @@ public class App {
         String strPath = sc.nextLine();
 
         File path = new File(strPath);
+        File[] folders = path.listFiles(File::isDirectory);
+        System.out.println("Folder: ");
+        for (File file : folders) {
+            System.out.println(file);
+        }
 
         sc.close();
     }
