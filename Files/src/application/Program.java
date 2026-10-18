@@ -18,7 +18,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        List <Product> products =  new ArrayList<>();
+        List<Product> products = new ArrayList<>();
 
         System.out.println("Enter the file path: ");
         String strPath = sc.nextLine();
@@ -27,11 +27,11 @@ public class Program {
         String sourceFolder = sourcePath.getParent();
 
         boolean success = new File(sourceFolder + "/out").mkdir();
-        System.out.println("Directory created successfully: "+success);
+        System.out.println("Directory created successfully: " + success);
 
-        String targetFile = sourceFolder + "out/summary.csv";
+        String targetFile = sourceFolder + "/out/summary.csv";
 
-        try (BufferedReader br = new BufferedReader(new FileReader(sourcePath))){
+        try (BufferedReader br = new BufferedReader(new FileReader(sourcePath))) {
             String itemCsv = br.readLine();
             while (itemCsv != null) {
                 String[] fields = itemCsv.split(",");
@@ -44,18 +44,18 @@ public class Program {
                 itemCsv = br.readLine();
             }
 
-        } catch (IOException e) {
-            System.out.println("Error reading file: "+ e.getMessage());
-        }
-
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(targetFile))) {
-            for (Product product : products) {
-                bw.write(product.getName()+","+product.total());
-                bw.newLine();
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(targetFile))) {
+                for (Product product : products) {
+                    bw.write(product.getName() + "," + product.total());
+                    bw.newLine();
+                }
+                System.out.println("target File Created!");
+            } catch (IOException e) {
+                System.out.println("Error writing the file: " + e.getMessage());
             }
-            System.out.println("target File Created!");
+
         } catch (IOException e) {
-            System.out.println("Error writing the file: "+ e.getMessage());
+            System.out.println("Error reading file: " + e.getMessage());
         }
 
         sc.close();
