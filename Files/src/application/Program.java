@@ -16,8 +16,8 @@ public class Program {
         System.out.println("Enter the file path: ");
         String strPath = sc.nextLine();
 
-        File path = new File(strPath);
-        
+        File sourcePath = new File(strPath);
+
 
         sc.close();
     }
