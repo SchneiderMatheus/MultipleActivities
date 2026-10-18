@@ -20,6 +20,9 @@ public class App {
             System.out.println(file);
         }
 
+        boolean success = new File(strPath + "\\subdir").mkdir();
+        System.out.println("Directory created successfully: "+success);
+
         sc.close();
     }
 }
