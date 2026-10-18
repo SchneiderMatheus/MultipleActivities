@@ -17,7 +17,10 @@ public class Program {
         String strPath = sc.nextLine();
 
         File sourcePath = new File(strPath);
+        String sourceFolder = sourcePath.getParent();
 
+        boolean success = new File(sourceFolder + "\\out").mkdir();
+        System.out.println("Directory created successfully: "+success);
 
         sc.close();
     }
