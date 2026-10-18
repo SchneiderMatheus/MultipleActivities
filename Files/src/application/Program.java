@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Product;
@@ -15,6 +16,7 @@ import entities.Product;
 public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
 
         List <Product> products =  new ArrayList<>();
 
@@ -24,7 +26,7 @@ public class Program {
         File sourcePath = new File(strPath);
         String sourceFolder = sourcePath.getParent();
 
-        boolean success = new File(sourceFolder + "\\out").mkdir();
+        boolean success = new File(sourceFolder + "/out").mkdir();
         System.out.println("Directory created successfully: "+success);
 
         String targetFile = sourceFolder + "out/summary.csv";
