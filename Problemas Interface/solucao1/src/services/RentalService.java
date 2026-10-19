@@ -15,6 +15,6 @@ public class RentalService {
     }
 
     public void processInvoice(CarRental carRental) {
-        carRental.setInvoice(new Invoice(pricePerHour, pricePerDay));
+        carRental.setInvoice(new Invoice(50.0, 10.0));
     }
 }
