@@ -13,6 +13,7 @@ public class CarRental {
         this.model = model;
         this.start = start;
         this.finish = finish;
+        price = totalPrice();
     }
 
     public String getModel() {
@@ -39,20 +40,37 @@ public class CarRental {
     public LocalDateTime getFinish() {
         return finish;
     }
+    
 
     public void setFinish(LocalDateTime finish) {
         this.finish = finish;
     }
 
-    public void setPrice(){
+    public Double totalPrice(){
         double minutes = Duration.between(getStart(), getFinish()).toMinutes();
         double hours = minutes /60;
+        double price = 0;
         if (hours <= 12) {
             price = 10 * Math.ceil(hours);
+            if (price > 100) {
+                return price * 0.15;
+            } else 
+                return price * 0.2;
+
         }
         else {
             price = 130 * Math.ceil(hours/24);
+            if (price > 100) {
+                return price * 0.15;
+            } else 
+                return price * 0.2;
         }
     }
+
+    @Override
+    public String toString() {
+        return "CarRental [model=" + model + ", price=" + price + "]";
+    }
+    
     
 }
