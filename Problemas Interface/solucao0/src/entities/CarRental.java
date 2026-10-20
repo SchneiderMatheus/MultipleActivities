@@ -8,12 +8,14 @@ public class CarRental {
     private Double price;
     private LocalDateTime start;
     private LocalDateTime finish;
+    private Double tax;
 
     public CarRental(String model, LocalDateTime start, LocalDateTime finish) {
         this.model = model;
         this.start = start;
         this.finish = finish;
         price = totalPrice();
+        tax = tax(price)*100;
     }
 
     public String getModel() {
@@ -45,32 +47,31 @@ public class CarRental {
     public void setFinish(LocalDateTime finish) {
         this.finish = finish;
     }
+    public Double tax(Double price){
+        if (price > 100) {
+            return 0.15;
+        } else
+            return 0.2;
+    }
 
     public Double totalPrice(){
         double minutes = Duration.between(getStart(), getFinish()).toMinutes();
         double hours = minutes /60;
         double price = 0;
         if (hours <= 12) {
-            price = 10 * Math.ceil(hours);
-            if (price > 100) {
-                return price * 0.15;
-            } else 
-                return price * 0.2;
-
+           price = 10 * Math.ceil(hours);
+           return price += tax(price)*price;
+    
         }
         else {
             price = 130 * Math.ceil(hours/24);
-            if (price > 100) {
-                return price * 0.15;
-            } else 
-                return price * 0.2;
+            return price += tax(price)*price;
         }
     }
 
     @Override
     public String toString() {
-        return "CarRental [model=" + model + ", price=" + price + "]";
+        return "CarRental [model=" + model + ", price=" + price + ", tax=" + tax + "]";
     }
-    
-    
+
 }
