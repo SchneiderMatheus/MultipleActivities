@@ -1,5 +1,6 @@
 package entities;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class CarRental {
@@ -7,5 +8,51 @@ public class CarRental {
     private Double price;
     private LocalDateTime start;
     private LocalDateTime finish;
+
+    public CarRental(String model, LocalDateTime start, LocalDateTime finish) {
+        this.model = model;
+        this.start = start;
+        this.finish = finish;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+
+    public LocalDateTime getStart() {
+        return start;
+    }
+
+    public void setStart(LocalDateTime start) {
+        this.start = start;
+    }
+
+    public LocalDateTime getFinish() {
+        return finish;
+    }
+
+    public void setFinish(LocalDateTime finish) {
+        this.finish = finish;
+    }
+
+    public void setPrice(){
+        double minutes = Duration.between(getStart(), getFinish()).toMinutes();
+        double hours = minutes /60;
+        if (hours <= 12) {
+            price = 10 * Math.ceil(hours);
+        }
+        else {
+            price = 130 * Math.ceil(hours/24);
+        }
+    }
     
 }
