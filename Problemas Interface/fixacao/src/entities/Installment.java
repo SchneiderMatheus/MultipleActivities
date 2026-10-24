@@ -2,12 +2,11 @@ package entities;
 
 import java.time.LocalDateTime;
 
-public class Installment extends Contract {
+public class Installment {
     private LocalDateTime dueDate;
     private Double amount;
 
-    public Installment(Integer number, LocalDateTime date, Double totalValue, LocalDateTime dueDate, Double amount) {
-        super(number, date, totalValue);
+    public Installment(LocalDateTime dueDate, Double amount) {
         this.dueDate = dueDate;
         this.amount = amount;
     }

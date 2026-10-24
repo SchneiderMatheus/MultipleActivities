@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+import entities.Installment;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -16,6 +18,10 @@ public class App {
         LocalDateTime data = LocalDateTime.parse(sc.nextLine(), fmt);
         System.out.print("Contract value: ");
         double value = sc.nextDouble();
+        System.out.print("Installments: ");
+        int parcelas = sc.nextInt();
+
+        Installment installment = new Installment(data, null);
 
         sc.close();
     }
