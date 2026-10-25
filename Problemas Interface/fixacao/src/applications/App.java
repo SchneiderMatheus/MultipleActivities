@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+import entities.Contract;
 import entities.Installment;
 
 public class App {
@@ -22,7 +23,7 @@ public class App {
         int parcelas = sc.nextInt();
 
         Installment installment = new Installment(data, parcelas);
-        
+        Contract contract = new Contract(numero, data, n)
 
         sc.close();
     }
