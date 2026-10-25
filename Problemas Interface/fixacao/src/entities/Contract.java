@@ -2,16 +2,19 @@ package entities;
 
 import java.time.LocalDateTime;
 
+import services.PaymentService;
+
 public class Contract {
     private Integer number;
     private LocalDateTime date;
     private Double totalValue;
+    private PaymentService payment;
 
     
-    public Contract(Integer number, LocalDateTime date, Double totalValue) {
+    public Contract(Integer number, LocalDateTime date, PaymentService payment) {
         this.number = number;
         this.date = date;
-        this.totalValue = totalValue;
+        this.payment = payment;
     }
     
     public Integer getNumber() {
@@ -29,8 +32,8 @@ public class Contract {
     public Double getTotalValue() {
         return totalValue;
     }
-    public void setTotalValue(Double totalValue) {
-        this.totalValue = totalValue;
+    public void setTotalValue() {
+        this.totalValue = payment.;
     }
     
     
