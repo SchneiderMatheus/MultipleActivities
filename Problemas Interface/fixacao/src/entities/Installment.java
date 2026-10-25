@@ -4,9 +4,9 @@ import java.time.LocalDateTime;
 
 public class Installment {
     private LocalDateTime dueDate;
-    private Double amount;
+    private Integer amount;
 
-    public Installment(LocalDateTime dueDate, Double amount) {
+    public Installment(LocalDateTime dueDate, Integer amount) {
         this.dueDate = dueDate;
         this.amount = amount;
     }

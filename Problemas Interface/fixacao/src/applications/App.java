@@ -21,7 +21,8 @@ public class App {
         System.out.print("Installments: ");
         int parcelas = sc.nextInt();
 
-        Installment installment = new Installment(data, null);
+        Installment installment = new Installment(data, parcelas);
+        
 
         sc.close();
     }
