@@ -4,8 +4,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import services.PaymentService;
-
 public class Contract {
     private Integer number;
     private LocalDateTime date;
