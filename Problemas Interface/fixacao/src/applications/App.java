@@ -26,10 +26,12 @@ public class App {
         int parcelas = sc.nextInt();
         Installment installment = new Installment(data, parcelas);
     
-        ContractService contractService = new ContractService(contract,parcelas);
+        ContractService contractService = new ContractService(contract,parcelas);// re-think
 
         System.out.println("Installments: ");
-        
+        for (Installment n : contract.getInstallments()) {
+            System.out.println(n);
+        }
 
         sc.close();
     }
