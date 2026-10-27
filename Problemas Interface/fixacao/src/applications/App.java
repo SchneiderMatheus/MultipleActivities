@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import entities.Contract;
 import entities.Installment;
+import services.ContractService;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,6 +26,10 @@ public class App {
         int parcelas = sc.nextInt();
         Installment installment = new Installment(data, parcelas);
     
+        ContractService contractService = new ContractService(contract,parcelas);
+
+        System.out.println("Installments: ");
+        
 
         sc.close();
     }
