@@ -7,9 +7,9 @@ public class Installment {
 
     private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private LocalDateTime dueDate;
-    private Integer amount;
+    private Double amount;
 
-    public Installment(LocalDateTime dueDate, Integer amount) {
+    public Installment(LocalDateTime dueDate, Double amount) {
         this.dueDate = dueDate;
         this.amount = amount;
     }
@@ -22,11 +22,11 @@ public class Installment {
         this.dueDate = dueDate;
     }
 
-    public Integer getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(Integer amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 

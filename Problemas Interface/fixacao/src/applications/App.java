@@ -25,9 +25,10 @@ public class App {
 
         System.out.print("Installments: ");
         int parcelas = sc.nextInt();
-        Installment installment = new Installment(data, parcelas);
+
     
         ContractService contractService = new ContractService(new PaypalPay());
+        contractService.processContract(contract, parcelas);
 
         System.out.println("Installments: ");
         for (Installment n : contract.getInstallments()) {
