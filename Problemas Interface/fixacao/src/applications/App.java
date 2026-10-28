@@ -7,6 +7,7 @@ import java.util.Scanner;
 import entities.Contract;
 import entities.Installment;
 import services.ContractService;
+import services.PaypalPay;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -26,7 +27,7 @@ public class App {
         int parcelas = sc.nextInt();
         Installment installment = new Installment(data, parcelas);
     
-        ContractService contractService = new ContractService(contract,parcelas);// re-think
+        ContractService contractService = new ContractService(new PaypalPay());
 
         System.out.println("Installments: ");
         for (Installment n : contract.getInstallments()) {
