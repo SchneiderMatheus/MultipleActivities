@@ -1,6 +1,6 @@
 package applications;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
@@ -17,8 +17,9 @@ public class App {
         System.out.println("Enter the contract data: ");
         System.out.print("Number: ");
         int numero = sc.nextInt();
+        sc.nextLine();
         System.out.print("Data (dd/MMM/yyy): ");
-        LocalDateTime data = LocalDateTime.parse(sc.nextLine(), fmt);
+        LocalDate data = LocalDate.parse(sc.nextLine(), fmt);
         System.out.print("Contract value: ");
         double value = sc.nextDouble();
         Contract contract = new Contract(numero, data, value);

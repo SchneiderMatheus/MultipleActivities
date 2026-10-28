@@ -1,24 +1,24 @@
 package entities;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Installment {
 
     private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
     private Double amount;
 
-    public Installment(LocalDateTime dueDate, Double amount) {
-        this.dueDate = dueDate;
+    public Installment(LocalDate dueDate2, Double amount) {
+        this.dueDate = dueDate2;
         this.amount = amount;
     }
 
-    public LocalDateTime getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(LocalDateTime dueDate) {
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
