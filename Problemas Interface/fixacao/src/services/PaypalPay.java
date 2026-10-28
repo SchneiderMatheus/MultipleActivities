@@ -1,10 +1,15 @@
 package services;
 
-public class PaypalPay {
-    public double paypalTax(Double valor, Integer parcelas){
+public class PaypalPay implements PaymentService {
 
-        double valorCacular = (valor + (valor*0.01)) * parcelas; 
-        return valorCacular += valorCacular*0.02;
-        
+    @Override
+    public double paymentTax(Double amount) {
+        return amount *0.02;
     }
+
+    @Override
+    public double interest(double amount, int months) {
+        return amount *0.01 * months;
+    }
+    
 }
