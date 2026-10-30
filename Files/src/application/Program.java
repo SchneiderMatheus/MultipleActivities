@@ -43,7 +43,7 @@ public class Program {
 
                 itemCsv = br.readLine();
             }
-
+//review
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(targetFile))) {
                 for (Product product : products) {
                     bw.write(product.getName() + "," + product.total());
