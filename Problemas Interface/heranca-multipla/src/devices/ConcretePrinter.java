@@ -1,6 +1,6 @@
 package devices;
 
-public class ConcretePrinter extends Device{
+public class ConcretePrinter extends Device implements Printer{
 
     public ConcretePrinter(String serialNumber){
         super(serialNumber);
