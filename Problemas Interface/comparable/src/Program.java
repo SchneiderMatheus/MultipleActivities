@@ -8,7 +8,7 @@ import java.util.List;
 public class Program {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        String path = "C:\\temp\\in.txt";
+        String path = "/home/mathe/estudos/MultipleActivities/Problemas Interface/comparable/in.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String name = br.readLine();
