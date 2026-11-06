@@ -21,7 +21,7 @@ public class Program2 {
                 list.add(new Employee(fields[0], Double.parseDouble(fields[1])));
                 employeeCsv = br.readLine();
             }
-            Collections.sort(list);
+            Collections.sort(list); // check why the error
             for (Employee emp : list) {
                 System.out.println(emp.getName() + ", " + emp.getSalary());
             }
