@@ -23,9 +23,8 @@ public class Employee implements Comparable<Employee> {
     }
 
     @Override
-    public int compareTo(Employee arg0) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+    public int compareTo(Employee other) {
+        return name.compareTo(other.getName());
     }
 
     

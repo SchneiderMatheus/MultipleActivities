@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Program2",
+            "request": "launch",
+            "mainClass": "applications.Program2",
+            "projectName": "MultipleActivities_9e333826"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "applications.App",
