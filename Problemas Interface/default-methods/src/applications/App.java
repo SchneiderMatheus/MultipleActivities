@@ -2,7 +2,7 @@ package applications;
 
 import java.util.Locale;
 import java.util.Scanner;
-
+import services.InterestService;
 import services.BrazilInterestService;
 
 public class App {
