@@ -19,22 +19,19 @@ public class App {
         System.out.println("Which country do you which to calculate? (USA or BR)");
         String n = sc.nextLine();
 
-        if (n == "USA") {
+        if (n.equalsIgnoreCase("USA")) {
             InterestService is = new UsaInterestService(1.0);
 		    payment = is.payment(amount, months);
-            System.out.println("Payment after " + months + " months:");
-		    System.out.println(String.format("%.2f", payment));
 
         } else {
             InterestService is = new BrazilInterestService(2.0);
 		    payment = is.payment(amount, months);
-            System.out.println("Payment after " + months + " months:");
-		    System.out.println(String.format("%.2f", payment));
+        
         }
 		
 		
-		//System.out.println("Payment after " + months + " months:");
-		//System.out.println(String.format("%.2f", payment));
+		System.out.println("Payment after " + months + " months:");
+		System.out.println(String.format("%.2f", payment));
 		
 		sc.close();
     }
