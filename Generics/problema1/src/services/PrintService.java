@@ -5,6 +5,10 @@ import java.util.List;
 
 public class PrintService {
     private List<Integer> lista = new ArrayList<>();
+    
+
+    public PrintService() {
+    }
 
     public void addValue(int value){
         lista.add(value);
