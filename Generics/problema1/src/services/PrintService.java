@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrintService {
-    private List<Integer> lista = new ArrayList<>();
+    private List<Object> lista = new ArrayList<>();
     
 
     public PrintService() {
     }
 
-    public void addValue(int value){
+    public void addValue(Object value){
         lista.add(value);
     }
 
-    public int first(){
+    public Object first(){
         return lista.getFirst();
     }
 
