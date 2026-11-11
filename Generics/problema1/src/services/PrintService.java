@@ -3,18 +3,18 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
-    private List<Object> lista = new ArrayList<>();
+public class PrintService<T> {
+    private List<T> lista = new ArrayList<>();
     
 
     public PrintService() {
     }
 
-    public void addValue(Object value){
+    public void addValue(T value){
         lista.add(value);
     }
 
-    public Object first(){
+    public T first(){
         return lista.getFirst();
     }
 
