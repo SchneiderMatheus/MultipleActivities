@@ -3,7 +3,7 @@ package services;
 import java.util.List;
 
 public class CalculationService {
-    public static Integer max(List<Integer> list){
+    public static Integer max(List<Integer> list){ // está recendo como argumento uma lista inteira?
         if (list.isEmpty()) {
             throw new IllegalStateException("List Can't be amppty");
         }
