@@ -14,7 +14,7 @@ public class App {
         for (int i = 0; i < n; i++) {
             list.add(sc.nextInt());
         }
-        System.out.println("max: ");
+        System.out.println("Max: ");
         System.out.println(CalculationService.max(list));
 
         sc.close();
