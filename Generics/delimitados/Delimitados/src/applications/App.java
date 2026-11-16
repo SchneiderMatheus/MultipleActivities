@@ -11,12 +11,14 @@ public class App {
         List <Product> list = new ArrayList<>();
         System.out.print("Number of numbers: ");
         int n = sc.nextInt();
+        sc.nextLine();
 
         for (int i = 0; i < n; i++) {
             System.out.println("Product: ");
             String product = sc.nextLine();
             System.out.println("Price: ");
             double price = sc.nextDouble();
+            sc.nextLine();
 
             list.add(new Product(product, price));
         }
