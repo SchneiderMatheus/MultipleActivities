@@ -17,7 +17,11 @@ public class Example {
         myObj = myNumber;
 
         List<Integer> myInts = Arrays.asList(5, 2, 10);
+        System.out.println("print list: ");
         printList(myInts);
+        System.out.println("____________________________________________________");
+        System.out.println("sout: ");
+        System.out.println(myInts);
 
     }
 
