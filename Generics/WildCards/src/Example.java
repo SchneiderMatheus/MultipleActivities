@@ -22,6 +22,8 @@ public class Example {
         System.out.println("____________________________________________________");
         System.out.println("sout: ");
         System.out.println(myInts);
+        System.out.println("__________________________________");
+        System.out.println(myObj);
 
     }
 
