@@ -13,6 +13,10 @@ public class App {
         }
         
         List<Number> listaNum = new ArrayList<>();
-        listaNum.add(listaDouble);
+
+        for (double number : listaDouble) {
+            listaNum.add(number);
+        }
+        
     }
 }
