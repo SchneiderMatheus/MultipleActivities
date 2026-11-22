@@ -8,6 +8,6 @@ public class example2 {
         intList.add(5);
         List<? extends Number> list = intList;
         Number x = list.get(0);
-        list.add(20); // erro de compilacao
+        list.add(20); // erro de compilacao COVARIANCIA
     }
 }
