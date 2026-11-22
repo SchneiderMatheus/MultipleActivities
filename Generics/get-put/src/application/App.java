@@ -8,6 +8,8 @@ public class App {
         listaInt.add(2);
         listaInt.add(3);
         List<Double> listaDouble = new ArrayList<>();
+        listaDouble.add(8.5);
+        listaDouble.add(7.3);
         for (int i : listaInt) {
             listaDouble.add((double)i);
         }
@@ -17,6 +19,13 @@ public class App {
         for (double number : listaDouble) {
             listaNum.add(number);
         }
-        
+        System.out.println("Lista de INT: ");
+        System.out.println(listaInt);
+        System.out.println("---------------------------------------------");
+        System.out.println("Lista de Double: ");
+        System.out.println(listaDouble);
+        System.out.println("---------------------------------------------");
+        System.out.println("Lista com ambos: ");
+        System.out.println(listaNum);
     }
 }
