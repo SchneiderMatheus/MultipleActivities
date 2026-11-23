@@ -13,7 +13,7 @@ public class problema2 {
         System.out.println(myObjs);
         
     }
-    public static void copy(List<? extends Number> fonte,List<? super Number> destino){
+    public static void copy(List<? extends Number> fonte,List<? super Number> destino){ // pq aqui nao póde ser extends no lugar de super
         for (Number number : fonte) {
             destino.add(number);
         }
