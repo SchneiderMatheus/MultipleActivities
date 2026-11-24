@@ -8,7 +8,7 @@ public class example2 {
         intList.add(5);
         List<? extends Number> list = intList;
         Number x = list.get(0);
-        list.add(20); // erro de compilacao COVARIANCIA
+        // list.add(20); // erro de compilacao COVARIANCIA
 
         List<Object> myObjs = new ArrayList<Object>();
         myObjs.add("Maria");
@@ -17,7 +17,7 @@ public class example2 {
         List<? super Number> myNums = myObjs;
         myNums.add(10);
         myNums.add(3.14);
-        Number x = myNums.get(0); // erro de compilacao CONTRAVARIANCIA
+         //Number x = myNums.get(0); // erro de compilacao CONTRAVARIANCIA
     }
 
 }
