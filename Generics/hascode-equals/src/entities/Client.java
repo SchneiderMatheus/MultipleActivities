@@ -26,10 +26,11 @@ public class Client {
     }
 
     @Override
-    public int hashCode() { // explicação bibi
+    public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((email == null) ? 0 : email.hashCode());
         return result;
     }
 
@@ -47,9 +48,13 @@ public class Client {
                 return false;
         } else if (!name.equals(other.name))
             return false;
+        if (email == null) {
+            if (other.email != null)
+                return false;
+        } else if (!email.equals(other.email))
+            return false;
         return true;
     }
 
-    
     
 }
