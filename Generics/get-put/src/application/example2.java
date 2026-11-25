@@ -8,6 +8,7 @@ public class example2 {
         intList.add(5);
         List<? extends Number> list = intList;
         Number x = list.get(0);
+        System.out.println(x);
         // list.add(20); // erro de compilacao COVARIANCIA
 
         List<Object> myObjs = new ArrayList<Object>();
