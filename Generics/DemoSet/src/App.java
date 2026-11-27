@@ -9,7 +9,7 @@ public class App {
         set.add("Notebook");
         
 
-        System.out.println(set.contains("Notebook"));
+        set.removeIf(x -> x.length()>= 3);
 
         for (String p : set) {
             System.out.println(p);
